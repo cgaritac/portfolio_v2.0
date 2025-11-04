@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@/shared/index.css'
+import '@/shared/styles/index.css'
 import App from './configuration/App.tsx'
 import { initFirebase } from './hoting/firebase.hosting.ts'
 

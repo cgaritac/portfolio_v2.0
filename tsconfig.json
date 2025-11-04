@@ -29,7 +29,7 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src", "tests", "vite-env.d.ts", "environment.d.ts", "vite.config.ts"],

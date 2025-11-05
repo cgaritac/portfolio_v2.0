@@ -6,3 +6,4 @@ export * from './experience';
 export * from './feedback';
 export * from './tech';
 export * from './works';
+export * from './stars-canvas';

@@ -15,10 +15,10 @@ export const Navbar: FC = () => {
                     setActive("");
                     window.scrollTo(0, 0);
                 }}>
-                    <img src={logo} alt={NAVBAR_CONSTANTS.logo.imageAlt} className="w-fit h-14 object-contain" />
-                    <p className="text-white text-[18px] font-bold cursor-pointer flex">
+                    <img src={logo} alt={NAVBAR_CONSTANTS.logo.imageAlt} className="w-9 h-9 sm:w-14 sm:h-14 object-contain shrink-0" />
+                    <p className="text-white text-[18px] font-bold cursor-pointer flex whitespace-nowrap">
                       {NAVBAR_CONSTANTS.logo.Name}&nbsp;
-                      <span className="md:block hidden">
+                      <span className="hidden md:inline">
                         {NAVBAR_CONSTANTS.logo.LastName} | {NAVBAR_CONSTANTS.logo.JobTitle}
                       </span>
                     </p>
@@ -44,7 +44,7 @@ export const Navbar: FC = () => {
                       className="w-7 h-7 object-contain cursor-pointer" 
                       onClick={() => setToggle(!toggle)}
                     />
-                    <div className={`${!toggle ? "hidden" : "flex"} p-6 black-gradient absolute top-16 
+                    <div className={`${!toggle ? "hidden" : "flex"} p-6 black-gradient absolute top-20
                                     right-0 mx-4 my-2 min-w-[135px] z-10 rounded-xl`}>
                         <ul className="list-none flex justify-center items-center flex-col gap-4">
                             {navLinks.map((link) => (

@@ -24,8 +24,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -133,7 +131,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* canvas- styles */
 .canvas-loader {
   font-size: 10px;
   width: 1em;

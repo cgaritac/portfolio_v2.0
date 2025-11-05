@@ -1,9 +1,16 @@
-export const App = () => {
+import { RouterProvider } from '../providers';
+import { initFirebase } from '../hosting';
+import { Layout } from '../layout';
+import { SinglePage} from '@/pages'
+
+initFirebase();
+
+export const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <h1>Hola Mundo</h1>
-      </div>
-    </>
+    <RouterProvider>
+      <Layout>
+        <SinglePage />
+      </Layout>
+    </RouterProvider>
   )
 }

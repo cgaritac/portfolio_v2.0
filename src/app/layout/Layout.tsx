@@ -1,12 +1,17 @@
+import { FC } from "react";
 import { PropsWithChildren } from "react";
-import { HeaderComponent, FooterComponent } from "@/widgets";
+import { HeaderComponent, FooterComponent } from "@/shared";
+import { Navbar, Hero } from "@/widgets";
 
 type LayoutProps = PropsWithChildren;
 
-export const Layout: React.FC<LayoutProps> = ({ children }) => {
+export const Layout: FC<LayoutProps> = ({ children }) => {
     return (
         <div className="relative z-0 bg-primary">
-            <HeaderComponent/>
+            <HeaderComponent>
+                <Navbar />
+                <Hero />
+            </HeaderComponent>
             {children}
             <FooterComponent />
         </div>

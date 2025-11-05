@@ -1,7 +1,18 @@
-export const SinglePage: React.FC = () => {
+import { FC } from "react";
+import { About, Experience, Tech, Works, Feedback, Contact, Stars } from "@/widgets";
+
+export const SinglePage: FC = () => {
     return (
-        <div>
-            <h1>SinglePage</h1>
-        </div>
+        <main>
+            <About />
+            <Experience />
+            <Tech />
+            <Works />
+            <Feedback />
+            <section className="relative z-0">
+                <Contact />
+                <Stars />
+            </section>
+        </main>
     )
 }

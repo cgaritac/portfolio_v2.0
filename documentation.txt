@@ -1,0 +1,143 @@
+## Crear imagen OG (Open Graph)
+
+Necesitas crear una imagen `og-image.png` de **1200x630px** en `/public/`:
+- Logo/foto tuya
+- Nombre: "César Garita"
+- Título: "Full Stack Developer"
+- Diseño limpio y profesional
+
+---
+
+## Estructura final recomendada de `/public/`:
+```
+public/
+├── cgc-website-favicon-color.png (tu favicon actual)
+├── og-image.png (1200x630px para redes sociales)
+├── robots.txt
+├── manifest.json (opcional, para PWA)
+└── sitemap.xml (opcional, para SEO)
+
+
+Para que es el manifest y como se configura?
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> -->
+
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
+    
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" href="/cgc-website-favicon-color.png" />
+    <link rel="apple-touch-icon" href="/cgc-website-favicon-color.png" /> -->
+    
+    <!-- Viewport -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /> -->
+    
+    <!-- SEO Meta Tags -->
+    <!-- <meta name="description" content="Portfolio of Carlos Garita Campos - Full Stack Developer specialized in React, TypeScript and modern architectures." />
+    <meta name="keywords" content="developer, portfolio, react, typescript, web developer, full stack" />
+    <meta name="author" content="Carlos Garita Campos" /> -->
+    
+    <!-- Open Graph / Facebook -->
+    <!-- <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cgarita.web.app/" />
+    <meta property="og:title" content="CGC Portfolio - Carlos Garita Campos" />
+    <meta property="og:description" content="Portfolio of Carlos Garita Campos - Full Stack Developer specialized in React, TypeScript and modern architectures." />
+    <meta property="og:image" content="https://cgarita.web.app/og-image.png" /> -->
+    
+    <!-- Twitter -->
+    <!-- <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://cgarita.web.app/" />
+    <meta property="twitter:title" content="CGC Portfolio - Carlos Garita Campos" />
+    <meta property="twitter:description" content="Portfolio of Carlos Garita Campos - Full Stack Developer" />
+    <meta property="twitter:image" content="https://cgarita.web.app/og-image.png" /> -->
+    
+    <!-- Theme Color -->
+    <!-- <meta name="theme-color" content="#000000" /> -->
+    
+    <!-- Preconnect to external domains (if you use external fonts or APIs) -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin /> -->
+<!--     
+    <title>CGC Portfolio - Carlos Garita Campos | Full Stack Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/app/main.tsx"></script>
+  </body>
+</html> -->
+
+Respaldo
+
+// import tailwindcss from '@tailwindcss/vite';
+// import react from '@vitejs/plugin-react';
+// import dotenv from 'dotenv';
+// import path from 'path';
+// import { fileURLToPath } from 'url';
+// import { defineConfig } from 'vite';
+// import pkg from './package.json';
+
+// const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// dotenv.config();
+
+// const envVariables: Record<string, string> = {};
+// for (const key in process.env) {
+//   if (key.startsWith('VITE_')) {
+//     envVariables[`process.env.${key}`] = JSON.stringify(process.env[key] as string);
+//   }
+// }
+
+// export default defineConfig({
+//   plugins: [react(), tailwindcss()],
+//   define: {
+//     envVariables,
+//     _APP_VERSION_: JSON.stringify(pkg.version),
+//   },
+//   resolve: {
+//     alias: {
+//       '@': path.resolve(__dirname, 'src'),
+//     },
+//   },
+// })
+
+
+# name: Deploy to Firebase Hosting
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build_and_deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: '20'
+#           cache: 'npm'
+
+#       - name: Install dependencies
+#         run: npm install --legacy-peer-deps
+
+#       - name: Build with environment variables
+#         run: npm run build
+#         env:
+#           VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
+#           VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
+#           VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
+#           VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}
+#           VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
+#           VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
+#           VITE_FIREBASE_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_MEASUREMENT_ID }}
+
+#       - name: Deploy to Firebase
+#         uses: FirebaseExtended/action-hosting-deploy@v0
+#         with:
+#           repoToken: '${{ secrets.GITHUB_TOKEN }}'
+#           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+#           channelId: live
+#           projectId: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}

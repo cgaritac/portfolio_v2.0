@@ -1,0 +1,62 @@
+# Architecture and Technologies
+- Project: Personal portfolio with React + strict TypeScript
+- Architecture: Feature-Sliced Design (FSD)
+- Build tool: Vite
+- Styling: Tailwind CSS v4
+- Package manager: npm (both local and CI/CD)
+- Deployment: Firebase via GitHub Actions workflow
+
+# FSD Structure
+- Organize code following FSD: app/, pages/, widgets/, features/, entities/, shared/
+- Each feature must be independent and self-contained
+- Shared contains reusable code (ui, lib, api, config)
+- Do not import from upper layers, only from lower or same layer
+
+# TypeScript
+- TypeScript strict mode always enabled
+- Explicit typing in functions and props
+- Use interfaces for component props
+- Avoid 'any', use 'unknown' when necessary
+- Define types in .types.ts or .interface.ts files
+
+# React
+- Functional components with hooks
+- Destructured props in function signature
+- Custom hooks for reusable logic (prefix 'use')
+- Use React.memo only when necessary for performance
+- Effect handling with useEffect and proper cleanup
+
+# Tailwind CSS
+- Use Tailwind v4 classes, no inline CSS or modules
+- Mobile-first: design for mobile first, then breakpoints
+- Extract components when classes repeat more than 3 times
+- Use @apply only in exceptional cases
+- Organize classes: layout → spacing → colors → typography → others
+
+# Clean Code and SOLID
+- Small functions with single responsibility (SRP)
+- Descriptive and self-explanatory names
+- Avoid obvious comments, code should be readable
+- DRY: don't repeat code, extract to functions/hooks
+- Components maximum 200 lines, if it grows more, split it
+- Dependency injection when appropriate
+
+# Code Conventions
+- File names: camelCase for utilities, PascalCase for components
+- Components: one component per file
+- Exports: use export default for components, named exports for utilities
+- Imports: organize in groups (external → internal → relative)
+- Constants in UPPER_SNAKE_CASE
+- Variables and functions in camelCase
+
+# Performance
+- Lazy loading for routes and large components
+- Optimize images (webp, lazy loading)
+- Appropriate code splitting with dynamic imports
+- Avoid unnecessary re-renders
+
+# Git and Deploy
+- Descriptive commits in English: "feat: add Hero component"
+- Ensure package-lock.json is always updated and committed
+- Verify Vite build is successful before push
+- Use npm for all package management operations

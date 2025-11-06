@@ -1,5 +1,16 @@
 {
   "projects": {
-    "default": "portfolio2-46a98"
-  }
+    "default": "portfolio2-46a98",
+    "production": "portfolio2-46a98"
+  },
+  "targets": {
+    "portfolio2-46a98": {
+      "hosting": {
+        "production": [
+          "cgarita"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

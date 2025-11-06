@@ -38,8 +38,6 @@ dist-ssr
 .env.production
 .env.*.local
 .qodo
-*.txt
-
 key
 
 # Firebase
@@ -55,3 +53,4 @@ coverage/
 # Misc
 *.tsbuildinfo
 .cache/
+/documentation/

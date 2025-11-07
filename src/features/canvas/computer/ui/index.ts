@@ -1,1 +1,1 @@
-export { default as ComputersCanvas } from "./Computers";
+export { ComputersCanvas } from "./Computers";

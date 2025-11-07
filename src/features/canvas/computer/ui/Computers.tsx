@@ -1,10 +1,13 @@
+import { Loader } from "@/shared";
 import { OrbitControls, Preload } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { FC, Suspense } from "react";
 import { Computer } from "../components";
-import { Loader } from "@/shared";
+import { useDeviceType } from "../hooks";
 
-const ComputersCanvas: FC = () => {
+export const ComputersCanvas: FC = () => {
+  const { isMobile, isTablet } = useDeviceType();
+
   return (
     <Canvas
       frameloop="demand"
@@ -18,11 +21,9 @@ const ComputersCanvas: FC = () => {
           maxPolarAngle={Math.PI / 2} 
           minPolarAngle={Math.PI / 2} 
         />
-        <Computer />
+        <Computer isMobile={isMobile} isTablet={isTablet} />
       </Suspense>
       <Preload all />
     </Canvas>
   )
 }
-
-export default ComputersCanvas;

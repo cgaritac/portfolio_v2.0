@@ -1,7 +1,12 @@
 import { useGLTF } from "@react-three/drei";
 import { FC } from "react";
 
-export const Computer: FC = () => {
+interface ComputerProps {
+  isMobile: boolean;
+  isTablet: boolean;
+}
+
+export const Computer: FC<ComputerProps> = ({ isMobile, isTablet }) => {
   const computer = useGLTF('/desktop_pc/scene.gltf');
 
   return (
@@ -20,9 +25,9 @@ export const Computer: FC = () => {
         shadow-mapSize={1024} />
       <primitive 
         object={computer.scene} 
-        scale={0.75} 
-        position={[0, -3.25, -1.5]} 
-        rotation={[-0.01, -0.2, -0.1]} 
+        scale={isMobile ? 0.27 : isTablet ? 0.5 : 0.75} 
+        position={isMobile ? [0, -0.07, -0.45] : isTablet ? [0, -1.5, -0.9] : [0, -3.25, -1.5]} 
+        rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   )

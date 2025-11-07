@@ -60,3 +60,6 @@
 - Ensure package-lock.json is always updated and committed
 - Verify Vite build is successful before push
 - Use npm for all package management operations
+
+# Responses
+- Every respone in the chat have to explain in detail the problem and the solution implemented

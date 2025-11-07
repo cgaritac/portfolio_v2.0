@@ -1,7 +1,7 @@
 import { styles } from "@/shared";
 import { FC } from "react";
 import { HERO_CONSTANTS } from "../constants";
-import { ComputersCanvas } from "@/shared";
+import ComputersCanvas from "@/features/canvas/computer/ui/Computers";
 
 export const Hero: FC = () => {
   return (

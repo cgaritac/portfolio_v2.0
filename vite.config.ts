@@ -29,6 +29,8 @@ export default defineConfig(({ mode }) => {
     define: {
       envVariables,
       _APP_VERSION_: JSON.stringify('1.0.0'),
+      // Fix para React DevTools con React 19 - define versión explícitamente
+      'process.env.npm_package_version': JSON.stringify('19.1.1'),
     },
     
     resolve: {

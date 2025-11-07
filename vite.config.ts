@@ -22,21 +22,26 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [
-      react(),
+      react({
+        // Ensure proper React handling in production
+        jsxRuntime: 'automatic',
+        // React 19 compatibility
+        jsxImportSource: 'react',
+      }),
       tailwindcss(),
     ] as PluginOption[],
     
     define: {
       envVariables,
       _APP_VERSION_: JSON.stringify('1.0.0'),
-      // Fix para React DevTools con React 19 - define versión explícitamente
-      'process.env.npm_package_version': JSON.stringify('19.1.1'),
     },
     
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
       },
+      // Force React to be a singleton to prevent multiple instances
+      dedupe: ['react', 'react-dom'],
     },
     
     // Build optimizations
@@ -47,18 +52,32 @@ export default defineConfig(({ mode }) => {
       // Minification with esbuild (faster, included by default in Vite)
       minify: 'esbuild',
       
+      // Ensure proper module format
+      modulePreload: {
+        polyfill: true,
+      },
+      
       // Chunk configuration for better caching
       rollupOptions: {
         output: {
+          // CRITICAL FIX: Include ALL React-related code in entry point
+          // This prevents initialization order issues with React 19
           manualChunks: (id) => {
             // Separate node_modules into vendor chunks
             if (id.includes('node_modules')) {
-              // React core
-              if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
-                return 'vendor-react';
+              // CRITICAL: ALL React and React dependencies in entry point (no splitting)
+              // This ensures React is fully initialized before any dependent code runs
+              if (
+                id.includes('react') ||
+                id.includes('react-dom') ||
+                id.includes('react-router') ||
+                id.includes('@react-three')
+              ) {
+                // Return undefined to force inclusion in entry chunk
+                return undefined;
               }
-              // Three.js and related
-              if (id.includes('three') || id.includes('@react-three')) {
+              // Three.js core (without React wrappers) - can be separate
+              if (id.includes('three') && !id.includes('@react-three')) {
                 return 'vendor-three';
               }
               // Framer Motion
@@ -72,10 +91,14 @@ export default defineConfig(({ mode }) => {
               // Other vendors
               return 'vendor';
             }
+            // Don't split application code - keep it together
+            return undefined;
           },
           // File names with hash for cache busting
           chunkFileNames: 'assets/js/[name]-[hash].js',
           entryFileNames: 'assets/js/[name]-[hash].js',
+          // Ensure proper chunk loading order
+          format: 'es',
           assetFileNames: (assetInfo) => {
             const info = assetInfo.name?.split('.') || [];
             const ext = info[info.length - 1];

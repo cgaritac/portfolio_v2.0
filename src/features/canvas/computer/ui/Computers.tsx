@@ -2,6 +2,7 @@ import { OrbitControls, Preload } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { FC, Suspense } from "react";
 import { Computer } from "../components";
+import { Loader } from "@/shared";
 
 const ComputersCanvas: FC = () => {
   return (
@@ -11,7 +12,7 @@ const ComputersCanvas: FC = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         <OrbitControls 
           enableZoom={false} 
           maxPolarAngle={Math.PI / 2} 

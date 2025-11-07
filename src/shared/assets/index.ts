@@ -30,6 +30,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import herobg from "./herobg.png";
+
 export {
   backend, carrent, close, creator, css,
   docker,
@@ -39,6 +41,7 @@ export {
   nodejs,
   reactjs,
   redux, shopify,
-  starbucks, tailwind, tesla, threejs, tripguide, typescript, web
+  starbucks, tailwind, tesla, threejs, tripguide, typescript, web, 
+  herobg
 };
 

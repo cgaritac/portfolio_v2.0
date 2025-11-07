@@ -9,12 +9,13 @@
   --color-black-100: #100d25;
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
+  --color-purple: #915eff;
 
   --shadow-card: 0px 35px 120px -15px #211e35;
 
   --breakpoint-xs: 450px;
 
-  --bg-hero-pattern: url('/src/assets/herobg.png');
+  --bg-hero-pattern: url('/src/shared/assets/herobg.png');
 }
 
 @layer utilities {

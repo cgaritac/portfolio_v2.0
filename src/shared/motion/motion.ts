@@ -8,7 +8,7 @@ export const textVariant = (delay: number) => {
         y: 0,
         opacity: 1,
         transition: {
-          type: "spring",
+          type: "spring" as const,
           duration: 1.25,
           delay: delay,
         },
@@ -16,7 +16,7 @@ export const textVariant = (delay: number) => {
     };
   };
   
-  export const fadeIn = (direction: "left" | "right" | "up" | "down", type: string, delay: number, duration: number) => {
+  export const fadeIn = (direction: "left" | "right" | "up" | "down", type: "spring" | "tween" | "keyframes", delay: number, duration: number) => {
     return {
       hidden: {
         x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -31,7 +31,7 @@ export const textVariant = (delay: number) => {
           type: type,
           delay: delay,
           duration: duration,
-          ease: "easeOut",
+          ease: "easeOut" as const,
         },
       },
     };
@@ -47,16 +47,16 @@ export const textVariant = (delay: number) => {
         scale: 1,
         opacity: 1,
         transition: {
-          type: "tween",
+          type: "tween" as const,
           delay: delay,
           duration: duration,
-          ease: "easeOut",
+          ease: "easeOut" as const,
         },
       },
     };
   };
   
-  export const slideIn = (direction: "left" | "right" | "up" | "down", type: string, delay: number, duration: number) => {
+  export const slideIn = (direction: "left" | "right" | "up" | "down", type: "spring" | "tween" | "keyframes", delay: number, duration: number) => {
     return {
       hidden: {
         x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -69,7 +69,7 @@ export const textVariant = (delay: number) => {
           type: type,
           delay: delay,
           duration: duration,
-          ease: "easeOut",
+          ease: "easeOut" as const,
         },
       },
     };

@@ -13,7 +13,7 @@ export const ServiceCard: FC<ServiceCardProps> = ({ index, title, icon }) => {
     return (
       <Tilt className="xs:w-[250px] w-full" options={{ max: 45, scale: 1, speed: 450 }}>
         <motion.div
-          variants={fadeIn("right", "spring", index * 0.5, 0.75)} 
+          variants={fadeIn({ direction: "right", type: "spring", delay: index * 0.5, duration: 0.75 })} 
           className="w-full green-pink-gradient p-px rounded-[20px] shadow-card"
         >
           <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">

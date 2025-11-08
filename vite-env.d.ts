@@ -30,12 +30,41 @@ declare module "*.webp" {
   export default content;
 }
 
+declare module "react-vertical-timeline-component" {
+  import type { ComponentType, CSSProperties, ReactNode } from "react";
+
+  export interface VerticalTimelineProps {
+    children?: ReactNode;
+    className?: string;
+    animate?: boolean;
+    layout?: "1-column" | "2-columns";
+  }
+
+  export interface VerticalTimelineElementProps {
+    children?: ReactNode;
+    className?: string;
+    contentStyle?: CSSProperties;
+    contentArrowStyle?: CSSProperties;
+    date?: string;
+    dateClassName?: string;
+    icon?: ReactNode;
+    iconStyle?: CSSProperties;
+    iconOnClick?: () => void;
+    position?: "left" | "right";
+    textClassName?: string;
+    visible?: boolean;
+  }
+
+  export const VerticalTimeline: ComponentType<VerticalTimelineProps>;
+  export const VerticalTimelineElement: ComponentType<VerticalTimelineElementProps>;
+}
+
 declare module "@/shared/assets" {
   export const logo: string;
   export const backend: string;
-  export const creator: string;
-  export const mobile: string;
-  export const web: string;
+  export const frontend: string;
+  export const software: string;
+  export const database: string;
   export const github: string;
   export const menu: string;
   export const close: string;
@@ -52,10 +81,6 @@ declare module "@/shared/assets" {
   export const tailwind: string;
   export const typescript: string;
   export const threejs: string;
-  export const meta: string;
-  export const shopify: string;
-  export const starbucks: string;
-  export const tesla: string;
   export const carrent: string;
   export const jobit: string;
   export const tripguide: string;

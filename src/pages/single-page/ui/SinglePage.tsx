@@ -1,11 +1,11 @@
 import { FC } from "react";
-import { AboutWithHOC, Experience, Tech, Works, Feedback, Contact, Stars } from "@/widgets";
+import { AboutWithHOC, ExperienceWithHOC, Tech, Works, Feedback, Contact, Stars } from "@/widgets";
 
 export const SinglePage: FC = () => {
     return (
         <main>
             <AboutWithHOC />
-            <Experience />
+            <ExperienceWithHOC />
             <Tech />
             <Works />
             <Feedback />

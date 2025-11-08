@@ -1,47 +1,26 @@
-import backend from "./backend.png";
-import close from "./close.svg";
-import creator from "./creator.png";
-import github from "./github.png";
-import logo from "./logo.svg";
-import menu from "./menu.svg";
-import mobile from "./mobile.png";
-import web from "./web.png";
+export { default as close } from "./close.svg";
+export { default as github } from "./github.png";
+export { default as menu } from "./menu.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
-import typescript from "./tech/typescript.png";
+export { default as css } from "./tech/css.png";
+export { default as docker } from "./tech/docker.png";
+export { default as figma } from "./tech/figma.png";
+export { default as git } from "./tech/git.png";
+export { default as html } from "./tech/html.png";
+export { default as javascript } from "./tech/javascript.png";
+export { default as mongodb } from "./tech/mongodb.png";
+export { default as nodejs } from "./tech/nodejs.png";
+export { default as reactjs } from "./tech/reactjs.png";
+export { default as redux } from "./tech/redux.png";
+export { default as tailwind } from "./tech/tailwind.png";
+export { default as threejs } from "./tech/threejs.svg";
+export { default as typescript } from "./tech/typescript.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+export { default as carrent } from "./carrent.png";
+export { default as jobit } from "./jobit.png";
+export { default as tripguide } from "./tripguide.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+export { default as herobg } from "./herobg.png";
 
-import herobg from "./herobg.png";
-
-export {
-  backend, carrent, close, creator, css,
-  docker,
-  figma,
-  git, github, html,
-  javascript, jobit, logo, menu, meta, mobile, mongodb,
-  nodejs,
-  reactjs,
-  redux, shopify,
-  starbucks, tailwind, tesla, threejs, tripguide, typescript, web, 
-  herobg
-};
-
+export * from "./company";
+export * from "./services";

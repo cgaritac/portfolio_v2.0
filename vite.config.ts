@@ -139,6 +139,8 @@ export default defineConfig(({ mode }) => {
         'framer-motion',
         '@react-three/fiber',
         '@react-three/drei',
+        'react-vertical-timeline-component',
+        'prop-types',
       ],
       exclude: ['firebase'],
     },

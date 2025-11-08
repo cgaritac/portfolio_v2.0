@@ -1,1 +1,1 @@
-export * from './ui';
+export { AboutWithHOC } from './ui';

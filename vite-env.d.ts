@@ -73,6 +73,19 @@ declare module "@/shared/assets" {
   export const tripguide: string;
 }
 
+declare module "@/widgets/experience/assets" {
+  export const sibudigital: string;
+  export const criticalmasslatam: string;
+  export const factork: string;
+}
+
+declare module "@/widgets/about/assets" {
+  export const backend: string;
+  export const frontend: string;
+  export const software: string;
+  export const database: string;
+}
+
 declare module "@/widgets/tech/assets" {
   export const csharp: string;
   export const python: string;

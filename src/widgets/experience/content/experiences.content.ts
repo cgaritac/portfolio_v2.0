@@ -1,4 +1,4 @@
-import { sibudigital, criticalmasslatam, factork } from "@/shared";
+import { sibudigital, criticalmasslatam, factork } from "../assets";
 import { EXPERIENCE_CONSTANTS } from "../constants";
 
 export const EXPERIENCES = [

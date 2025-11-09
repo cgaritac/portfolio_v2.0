@@ -7,6 +7,3 @@ export { default as jobit } from "./jobit.png";
 export { default as tripguide } from "./tripguide.png";
 
 export { default as herobg } from "./herobg.png";
-
-export * from "./company";
-export * from "./services";

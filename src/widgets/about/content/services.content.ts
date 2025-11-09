@@ -1,4 +1,4 @@
-import { backend, software, frontend, database } from "@/shared/assets";
+import { backend, software, frontend, database } from "../assets";
 import { ABOUT_CONSTANTS } from "../constants";
 
 export const SERVICES = [

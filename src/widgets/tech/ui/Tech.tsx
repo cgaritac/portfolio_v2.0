@@ -1,13 +1,20 @@
 import { BallCanvas, HOC } from "@/features";
-import { FC } from "react";
+import { useIsMobile } from "@/features/canvas/ball/hooks";
+import { FC, useMemo } from "react";
 import { TECHNOLOGIES } from "../content";
 
 const Tech: FC = () => {
+  const isMobile = useIsMobile();
+  
+  const technologiesToRender = useMemo(() => {
+    return isMobile ? TECHNOLOGIES.slice(0, 6) : TECHNOLOGIES;
+  }, [isMobile]);
+
   return (
     <div>
       <div className="w-full flex flex-row flex-wrap justify-center items-center gap-10">
-        {TECHNOLOGIES.map((technology) => (
-          <div className="w-27 h-27 sm:w-32 sm:h-32" key={technology.name}>
+        {technologiesToRender.map((technology) => (
+          <div className="w-27 h-27" key={technology.name}>
             <BallCanvas icon={technology.icon} name={technology.name} />
           </div>
         ))}

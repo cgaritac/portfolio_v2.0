@@ -1,11 +1,12 @@
 interface ParagraphsSplitProps {
     text: string;
+    className?: string;
 }
 
-export const ParagraphSplitter = ({ text }: ParagraphsSplitProps) => {
+export const ParagraphSplitter = ({ text, className }: ParagraphsSplitProps) => {
     return text.split('\n')
         .filter(paragraph => paragraph.trim() !== '')
         .map((paragraph, index) => (
-            <p key={index}>{paragraph.trim()}</p>
+            <p key={index} className={`${className}`}>{paragraph.trim()}</p>
         ));
 }

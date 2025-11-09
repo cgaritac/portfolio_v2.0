@@ -1,7 +1,7 @@
-import { close, menu, styles } from "@/shared";
+import { styles } from "@/shared";
 import { FC, useState } from "react";
 import { Link } from "react-router-dom";
-import { logo } from "../assets";
+import { logo, close, menu } from "../assets";
 import { NAVBAR_CONSTANTS } from "../constants";
 import { NAV_LINKS } from "../links";
 

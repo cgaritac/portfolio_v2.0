@@ -1,4 +1,4 @@
-import { carrent, jobit, tripguide } from "@/shared/assets";
+//import { carrent, jobit, tripguide } from "@/shared/assets";
 
 export const PROJECTS = [
     {
@@ -19,7 +19,7 @@ export const PROJECTS = [
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      //image: carrent,
       source_code_link: "https://github.com/",
     },
     {
@@ -40,7 +40,7 @@ export const PROJECTS = [
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      //image: jobit,
       source_code_link: "https://github.com/",
     },
     {
@@ -61,7 +61,7 @@ export const PROJECTS = [
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      //image: tripguide,
       source_code_link: "https://github.com/",
     },
   ];

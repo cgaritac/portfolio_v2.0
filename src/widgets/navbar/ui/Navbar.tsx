@@ -1,8 +1,9 @@
-import { close, menu, navLinks, styles } from "@/shared";
+import { close, menu, styles } from "@/shared";
 import { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import { logo } from "../assets";
 import { NAVBAR_CONSTANTS } from "../constants";
+import { NAV_LINKS } from "../links";
 
 export const Navbar: FC = () => {
     const [active, setActive] = useState<string>("");
@@ -29,7 +30,7 @@ export const Navbar: FC = () => {
                     </p>
                 </Link>
                 <ul className="list-none hidden md:flex flex-row gap-10">
-                    {navLinks.map((link) => (
+                    {NAV_LINKS.map((link) => (
                         <li 
                           key={link.id}
                           className={`${active === link.title
@@ -52,7 +53,7 @@ export const Navbar: FC = () => {
                     <div className={`${!toggle ? "hidden" : "flex"} p-6 black-gradient absolute top-16
                                     right-0 mx-4 my-2 min-w-[135px] z-10 rounded-xl`}>
                         <ul className="list-none flex justify-center items-center flex-col gap-4">
-                            {navLinks.map((link) => (
+                            {NAV_LINKS.map((link) => (
                                 <li 
                                   key={link.id}
                                   className={`${active === link.title

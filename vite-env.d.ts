@@ -59,18 +59,27 @@ declare module "react-vertical-timeline-component" {
   export const VerticalTimelineElement: ComponentType<VerticalTimelineElementProps>;
 }
 
-declare module "@/shared/assets" {
-  export const logo: string;
+declare module "@/widgets/experience/assets" {
+  export const sibudigital: string;
+  export const criticalmasslatam: string;
+  export const factork: string;
+}
+
+declare module "@/widgets/about/assets" {
   export const backend: string;
   export const frontend: string;
   export const software: string;
   export const database: string;
+}
+
+declare module "@/widgets/works/assets" {
   export const github: string;
-  export const menu: string;
+}
+
+declare module "@/widgets/navbar/assets" {
+  export const logo: string;
   export const close: string;
-  export const carrent: string;
-  export const jobit: string;
-  export const tripguide: string;
+  export const menu: string;
 }
 
 declare module "@/widgets/tech/assets" {

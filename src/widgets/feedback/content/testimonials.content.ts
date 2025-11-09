@@ -1,26 +1,26 @@
 export const TESTIMONIALS = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        `Carlos is very quick learner, and excels at taking care of his area of expertise  in Content Authoring and FE development (you name it and he knows it).`,
+      name: "Andrés Elías Vargas Ramírez",
+      designation: "AEM Architect",
+      company: "Kaiser Permanente",
+      image: "https://randomuser.me/api/portraits/men/4.jpg",
+    },
+    {
+      testimonial:
+        `His ability to balance multiple projects and prioritize tasks effectively has been instrumental in the successful execution of the digital initiatives at our company.`,
+      name: "Andrea Benavides",
+      designation: "Senior Digital Project Manager",
+      company: "Critical Mass Latam",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+        testimonial:
+          `Carlos is exceptional. He is always willing to help with any technical questions, whether they relate to backend or frontend development.`,
+        name: "Luis Brenes",
+        designation: "Full Stack Developer",
+        company: "Factor K Software",
+        image: "https://randomuser.me/api/portraits/men/5.jpg",
+      },
   ];

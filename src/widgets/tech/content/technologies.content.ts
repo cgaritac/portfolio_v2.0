@@ -5,14 +5,16 @@ import {
   javascript,
   html,
   git,
-  threejs,
-  mongodb,
+  csharp,
+  python,
+  java,
+  sql,
+  dotnet,
+  azure,
   docker,
-  figma,
-  nodejs,
-  redux,
   tailwind,
-} from "@/shared/assets";
+  angular,
+} from "../assets";
 
 export const TECHNOLOGIES = [
   {
@@ -32,39 +34,47 @@ export const TECHNOLOGIES = [
     icon: typescript,
   },
   {
+    name: "C#",
+    icon: csharp,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Angular",
+    icon: angular,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: ".NET",
+    icon: dotnet,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    name: "SQL",
+    icon: sql,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Azure",
+    icon: azure,
   },
 ];

@@ -1,10 +1,9 @@
-import { fadeIn, HOC } from "@/shared";
+import { fadeIn, SectionTitle } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { ServiceCard } from "../components";
 import { ABOUT_CONSTANTS } from "../constants";
-import { ParagraphSplitter } from "@/features";
-import { SectionTitle } from "@/shared/components";
+import { ParagraphSplitter, HOC } from "@/features";
 import { SERVICES } from "../content";
 
 const About: FC = () => {

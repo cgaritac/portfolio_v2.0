@@ -16,7 +16,31 @@ import {
   angular,
 } from "../assets";
 
-export const TECHNOLOGIES = [
+export const TECHNOLOGIES = [  
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Angular",
+    icon: angular,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: ".NET",
+    icon: dotnet,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Azure",
+    icon: azure,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -38,28 +62,8 @@ export const TECHNOLOGIES = [
     icon: csharp,
   },
   {
-    name: "Python",
-    icon: python,
-  },
-  {
     name: "Java",
     icon: java,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Angular",
-    icon: angular,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: ".NET",
-    icon: dotnet,
   },
   {
     name: "SQL",
@@ -72,9 +76,5 @@ export const TECHNOLOGIES = [
   {
     name: "docker",
     icon: docker,
-  },
-  {
-    name: "Azure",
-    icon: azure,
   },
 ];

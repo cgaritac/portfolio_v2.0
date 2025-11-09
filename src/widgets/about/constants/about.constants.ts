@@ -6,4 +6,10 @@ export const ABOUT_CONSTANTS = {
     My expertise encompasses developing responsive user interfaces, designing robust back-end services, managing databases, and deploying applications in cloud environments. 
 
     I thrive on solving complex technical challenges and collaborating to translate abstract concepts into tangible, high-performing digital experiences, consistently embracing continuous learning and technological evolution.`,
+    ServicesTitle: [
+        "Frontend Developer",
+        "Backend Developer",
+        "Software Engineer",
+        "Database Administrator",
+    ],
 }

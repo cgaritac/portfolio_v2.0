@@ -68,20 +68,31 @@ declare module "@/shared/assets" {
   export const github: string;
   export const menu: string;
   export const close: string;
-  export const css: string;
+  export const carrent: string;
+  export const jobit: string;
+  export const tripguide: string;
+}
+
+declare module "@/widgets/tech/assets" {
+  export const csharp: string;
+  export const python: string;
+  export const java: string;
+  export const bootstrap: string;
+  export const sql: string;
+  export const dotnet: string;
+  export const clerk: string;
+  export const singleSpa: string;
+  export const azure: string;
+  export const adobe: string;
+  export const angular: string;
   export const docker: string;
   export const figma: string;
   export const git: string;
   export const html: string;
   export const javascript: string;
-  export const mongodb: string;
   export const nodejs: string;
   export const reactjs: string;
-  export const redux: string;
   export const tailwind: string;
   export const typescript: string;
   export const threejs: string;
-  export const carrent: string;
-  export const jobit: string;
-  export const tripguide: string;
 }

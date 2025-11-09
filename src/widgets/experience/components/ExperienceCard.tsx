@@ -1,10 +1,10 @@
-import { experiences } from "@/shared";
 import { FC } from "react";
 import 'react-vertical-timeline-component/style.min.css';
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { EXPERIENCES } from "../content";
 
 interface ExperienceCardProps {
-  experience: typeof experiences[number];
+  experience: (typeof EXPERIENCES)[number];
 }
 
 export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }: ExperienceCardProps) => {
@@ -30,7 +30,7 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }: Experien
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
+        {experience.points.map((point: string, index: number) => (
           <li 
             key={`experience-point-${index}`} 
             className="text-white-100 text-[14px] pl-1 tracking-wider"

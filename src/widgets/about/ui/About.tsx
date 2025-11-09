@@ -1,10 +1,10 @@
-import { fadeIn, HOC, services } from "@/shared";
+import { fadeIn, SectionTitle } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { ServiceCard } from "../components";
 import { ABOUT_CONSTANTS } from "../constants";
-import { ParagraphSplitter } from "@/features";
-import { SectionTitle } from "@/shared/components";
+import { ParagraphSplitter, HOC } from "@/features";
+import { SERVICES } from "../content";
 
 const About: FC = () => {
   return (
@@ -22,7 +22,7 @@ const About: FC = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
+        {SERVICES.map((service, index) => (
           <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon} />
         ))}
       </div>

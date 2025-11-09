@@ -1,12 +1,12 @@
 import { FC } from "react";
-import { AboutWithHOC, ExperienceWithHOC, Tech, Works, Feedback, Contact, Stars } from "@/widgets";
+import { AboutWithHOC, ExperienceWithHOC, TechWithHOC, Works, Feedback, Contact, Stars } from "@/widgets";
 
 export const SinglePage: FC = () => {
     return (
         <main>
             <AboutWithHOC />
             <ExperienceWithHOC />
-            <Tech />
+            <TechWithHOC />
             <Works />
             <Feedback />
             <section className="relative z-0">

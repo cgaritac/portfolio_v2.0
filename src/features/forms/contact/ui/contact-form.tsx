@@ -1,6 +1,7 @@
 import { FC, useState, useRef } from "react"
 import emailjs from '@emailjs/browser'
 import { CONTACT_FORM_CONSTANTS } from "../constants"
+import { toast } from 'sonner'
 
 export const ContactForm: FC = () => {
   const [form, setForm] = useState({
@@ -37,12 +38,12 @@ export const ContactForm: FC = () => {
     )
     .then(() => {
       setLoading(false)
-      alert(CONTACT_FORM_CONSTANTS.SUCCESS_MESSAGE) //TODO Change this to a toast
+      toast.success(CONTACT_FORM_CONSTANTS.SUCCESS_MESSAGE)
 
       setForm({ name: '', email: '', message: '' })
     }, (error) => {
       setLoading(false)
-      alert(CONTACT_FORM_CONSTANTS.ERROR_MESSAGE)
+      toast.error(CONTACT_FORM_CONSTANTS.ERROR_MESSAGE)
       console.error(error)
     })
   }

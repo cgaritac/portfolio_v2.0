@@ -1,9 +1,9 @@
 import { HOC } from "@/features"
 import { FC, useState, useRef } from "react"
 import { motion } from "framer-motion"
-// import emailjs from '@emailjs/browser'
-import { /*styles,*/ slideIn, SectionTitle } from "@/shared"
-// import { EarthCanvas } from "@/features"
+import emailjs from '@emailjs/browser'
+import { styles, slideIn, SectionTitle } from "@/shared"
+import { EarthCanvas } from "@/features"
 
 const Contact: FC = () => {
   const [form, setForm] = useState({
@@ -78,7 +78,7 @@ const Contact: FC = () => {
         variants={slideIn({ direction: "right", type: "tween", delay: 0.2, duration: 1 })} 
         className="xl:flex-1 xl:h-auto md:h-[500px] h-[350px]"
       >
-        {/* <EarthCanvas /> */}
+        <EarthCanvas />
       </motion.div>
     </div>
   )

@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { AboutWithHOC, ExperienceWithHOC, TechWithHOC, WorksWithHOC, FeedbackWithHOC, ContactWithHOC, StarsWithHOC } from "@/widgets";
+import { AboutWithHOC, ExperienceWithHOC, TechWithHOC, WorksWithHOC, FeedbackWithHOC, ContactWithHOC } from "@/widgets";
+import { StarsCanvas } from "@/features";
 
 export const SinglePage: FC = () => {
     return (
@@ -11,7 +12,7 @@ export const SinglePage: FC = () => {
             <FeedbackWithHOC />
             <section className="relative z-0">
                 <ContactWithHOC />
-                <StarsWithHOC />
+                <StarsCanvas />
             </section>
         </main>
     )

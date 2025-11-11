@@ -2,7 +2,6 @@ import {
   css,
   reactjs,
   typescript,
-  javascript,
   html,
   git,
   csharp,
@@ -11,12 +10,11 @@ import {
   sql,
   dotnet,
   azure,
-  docker,
   tailwind,
   angular,
 } from "../assets";
 
-export const TECHNOLOGIES = [  
+export const TECHNOLOGIES = [
   {
     name: "React JS",
     icon: reactjs,
@@ -50,10 +48,6 @@ export const TECHNOLOGIES = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "TypeScript",
     icon: typescript,
   },
@@ -72,9 +66,5 @@ export const TECHNOLOGIES = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];

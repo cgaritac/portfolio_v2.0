@@ -1,8 +1,7 @@
 import { HOC } from "@/features"
 import { FC } from "react"
 import { motion } from "framer-motion"
-import emailjs from '@emailjs/browser'
-import { styles, slideIn, SectionTitle } from "@/shared"
+import { slideIn, SectionTitle } from "@/shared"
 import { EarthCanvas, ContactForm } from "@/features"
 
 const Contact: FC = () => {  

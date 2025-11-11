@@ -2,9 +2,9 @@ import { HOC, ParagraphSplitter } from "@/features";
 import { fadeIn, SectionTitle } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
+import { ProjectCard } from "../components";
 import { WORKS_CONSTANTS } from "../constants";
 import { PROJECTS } from "../content";
-import { ProjectCard } from "../components";
 
 const Works: FC = () => {
   return (
@@ -15,12 +15,12 @@ const Works: FC = () => {
       />
 
       <div className="w-full flex">
-        <motion.p 
+        <motion.div 
           variants={fadeIn({ direction: "left", type: "keyframes", delay: 0.1, duration: 1 })}
           className="mt-3 text-secondary text-[17px] max-w-5xl leading-[30px] space-y-4"
         >
           <ParagraphSplitter text={WORKS_CONSTANTS.Description} />
-        </motion.p>
+        </motion.div>
       </div>
 
       <div className="w-full flex flex-wrap justify-center gap-7 mt-14">

@@ -73,8 +73,4 @@ export const TECHNOLOGIES = [
     name: "git",
     icon: git,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];

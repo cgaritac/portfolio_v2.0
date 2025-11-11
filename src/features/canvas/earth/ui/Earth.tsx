@@ -5,8 +5,15 @@ import { Loader } from "@/shared";
 
 const Earth = () => {
   const earth = useGLTF('/planet/scene.gltf');
+
   return (
-    <primitive object={earth.scene} scale={0.25} position-y={0} rotation-y={0} />
+    <primitive 
+      object={earth.scene} 
+      scale={2.5} 
+      position-y={0} 
+      rotation-y={0} 
+
+    />
   )
 }
 
@@ -15,11 +22,16 @@ export const EarthCanvas: FC = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [-4, 3, 6], fov: 45, near: 0.1, far: 200 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<Loader />}>
-        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+        <OrbitControls 
+          autoRotate={true}
+          autoRotateSpeed={3}
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2} 
+          minPolarAngle={Math.PI / 2} />
         <Earth />
       </Suspense>
       <Preload all />

@@ -7,7 +7,7 @@ const Tech: FC = () => {
   const isMobile = useIsMobile();
   
   const technologiesToRender = useMemo(() => {
-    return isMobile ? TECHNOLOGIES.slice(0, 6) : TECHNOLOGIES;
+    return isMobile ? TECHNOLOGIES.slice(0, 4) : TECHNOLOGIES;
   }, [isMobile]);
 
   return (

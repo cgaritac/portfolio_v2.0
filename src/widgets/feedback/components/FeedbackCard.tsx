@@ -28,7 +28,12 @@ export const FeedbackCard: FC<FeedbackCardProps> = ({ index, testimonial, name, 
             </cite>
             <p className="mt-1 text-secondary text-[12px]">{designation} of {company}</p>
           </div>
-          <img src={image} alt={`${name} profile picture`} className="w-10 h-10 rounded-full object-cover" />
+          <img 
+            src={image} 
+            alt={`${name} profile picture`} 
+            title={`${name} - ${designation} at ${company}`}
+            className="w-10 h-10 rounded-full object-cover" 
+          />
         </footer>
       </blockquote>
     </motion.article>

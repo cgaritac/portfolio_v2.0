@@ -9,7 +9,7 @@ import { EXPERIENCES } from "../content";
 
 const Experience: FC = () => {
   return (
-    <>
+    <section aria-labelledby="experience-title">
       <header>
         <SectionTitle 
           titleDescription={EXPERIENCE_CONSTANTS.TitleDescription} 
@@ -27,7 +27,7 @@ const Experience: FC = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </section>
   )
 }
 

@@ -8,7 +8,7 @@ import { SERVICES } from "../content";
 
 const About: FC = () => {
   return (
-    <>
+    <section aria-labelledby="about-title">
       <header>
         <SectionTitle 
           titleDescription={ABOUT_CONSTANTS.TitleDescription} 
@@ -23,14 +23,14 @@ const About: FC = () => {
         <ParagraphSplitter text={ABOUT_CONSTANTS.Presentation} />
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10" role="list">
+      <div className="mt-20 flex flex-wrap gap-10" role="list" aria-label="Services and expertise">
         {SERVICES.map((service, index) => (
-          <div key={service.title} role="listitem">
+          <article key={service.title} role="listitem" itemScope itemType="https://schema.org/Service">
             <ServiceCard index={index} title={service.title} icon={service.icon} />
-          </div>
+          </article>
         ))}
       </div>
-    </>
+    </section>
   )
 }
 

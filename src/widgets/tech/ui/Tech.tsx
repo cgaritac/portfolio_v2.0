@@ -11,15 +11,15 @@ const Tech: FC = () => {
   }, [isMobile]);
 
   return (
-    <div role="list" aria-label="Technologies list">
-      <div className="w-full flex flex-row flex-wrap justify-center items-center gap-10">
+    <section aria-labelledby="tech-title">
+      <div role="list" aria-label="Technologies and skills" className="w-full flex flex-row flex-wrap justify-center items-center gap-10">
         {technologiesToRender.map((technology) => (
-          <div className="w-27 h-27" key={technology.name} role="listitem">
+          <article className="w-27 h-27" key={technology.name} role="listitem" itemScope itemType="https://schema.org/Thing">
             <BallCanvas icon={technology.icon} name={technology.name} />
-          </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

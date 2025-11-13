@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, tags, source_code_link }) => {
   return (
-    <motion.div
+    <motion.article
       variants={fadeIn({ direction: "up", type: "spring", delay: index * 0.5, duration: 0.75 })}
     >
       <Tilt 
@@ -23,14 +23,16 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
         options={{ max: 45, scale: 1, speed: 450 }}
       >
         <div className="relative w-full h-[230px]">
-          <img src={project} alt={name} className="w-full h-full object-cover rounded-2xl" />
+          <img src={project} alt={`${name} project preview`} className="w-full h-full object-cover rounded-2xl" />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div 
+            <button
+              type="button"
+              aria-label={`View source code for ${name}`}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               onClick={() => window.open(source_code_link, "_blank")}
             >
-              <img src={github} alt="source code" className="w-3/4 h-3/4" />
-            </div>
+              <img src={github} alt="" className="w-3/4 h-3/4" aria-hidden="true" />
+            </button>
           </div>
         </div>
 
@@ -42,14 +44,14 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
           />
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2" role="list">
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <span key={tag.name} className={`text-[14px] ${tag.color}`} role="listitem">
               #{tag.name}
-            </p>
+            </span>
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </motion.article>
   )
 }

@@ -9,10 +9,12 @@ import { PROJECTS } from "../content";
 const Works: FC = () => {
   return (
     <>
-      <SectionTitle 
-        titleDescription={WORKS_CONSTANTS.TitleDescription} 
-        title={WORKS_CONSTANTS.Title} 
-      />
+      <header>
+        <SectionTitle 
+          titleDescription={WORKS_CONSTANTS.TitleDescription} 
+          title={WORKS_CONSTANTS.Title} 
+        />
+      </header>
 
       <div className="w-full flex">
         <motion.div 
@@ -23,14 +25,15 @@ const Works: FC = () => {
         </motion.div>
       </div>
 
-      <div className="w-full flex flex-wrap justify-center gap-7 mt-14">
+      <div className="w-full flex flex-wrap justify-center gap-7 mt-14" role="list">
         {PROJECTS.map((project, index) => (
-          <ProjectCard 
-            key={`project-${index}`} 
-            index={index} name={project.name}
-            description={project.description}
-            tags={project.tags}
-            source_code_link={project.source_code_link} />
+          <div key={`project-${index}`} role="listitem">
+            <ProjectCard 
+              index={index} name={project.name}
+              description={project.description}
+              tags={project.tags}
+              source_code_link={project.source_code_link} />
+          </div>
         ))}	
       </div>
     </>

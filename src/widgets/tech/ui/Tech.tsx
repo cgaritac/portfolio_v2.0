@@ -11,10 +11,10 @@ const Tech: FC = () => {
   }, [isMobile]);
 
   return (
-    <div>
+    <div role="list" aria-label="Technologies list">
       <div className="w-full flex flex-row flex-wrap justify-center items-center gap-10">
         {technologiesToRender.map((technology) => (
-          <div className="w-27 h-27" key={technology.name}>
+          <div className="w-27 h-27" key={technology.name} role="listitem">
             <BallCanvas icon={technology.icon} name={technology.name} />
           </div>
         ))}

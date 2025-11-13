@@ -1,18 +1,20 @@
+import { HOC, ParagraphSplitter } from "@/features";
 import { fadeIn, SectionTitle } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { ServiceCard } from "../components";
 import { ABOUT_CONSTANTS } from "../constants";
-import { ParagraphSplitter, HOC } from "@/features";
 import { SERVICES } from "../content";
 
 const About: FC = () => {
   return (
     <>
-      <SectionTitle 
-        titleDescription={ABOUT_CONSTANTS.TitleDescription} 
-        title={ABOUT_CONSTANTS.Title} 
-      />
+      <header>
+        <SectionTitle 
+          titleDescription={ABOUT_CONSTANTS.TitleDescription} 
+          title={ABOUT_CONSTANTS.Title} 
+        />
+      </header>
 
       <motion.div 
         variants={fadeIn({ direction: "up", type: "tween", delay: 0.1, duration: 1 })}
@@ -21,9 +23,11 @@ const About: FC = () => {
         <ParagraphSplitter text={ABOUT_CONSTANTS.Presentation} />
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10" role="list">
         {SERVICES.map((service, index) => (
-          <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon} />
+          <div key={service.title} role="listitem">
+            <ServiceCard index={index} title={service.title} icon={service.icon} />
+          </div>
         ))}
       </div>
     </>

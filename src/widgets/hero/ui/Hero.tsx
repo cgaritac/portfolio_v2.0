@@ -6,13 +6,13 @@ import { HERO_CONSTANTS } from "../constants";
 
 export const Hero: FC = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto" aria-label="Hero section">
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className="flex flex-col justify-center items-center mt-5">
+        <div className="flex flex-col justify-center items-center mt-5" aria-hidden="true">
           <div className="w-5 h-5 rounded-full bg-purple" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-        <div>
+        <header>
           <h1 className={`${styles.heroHeadText} text-white`}>
             {HERO_CONSTANTS.title}
             &nbsp;
@@ -25,14 +25,14 @@ export const Hero: FC = () => {
             <br className="sm:block hidden" />
             {HERO_CONSTANTS.subtitle2}
           </p>
-        </div>
+        </header>
       </div>
 
       <ComputersCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about" aria-label="Scroll to about section">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2" role="img" aria-label="Scroll indicator">
             <motion.div
               animate={{
                 y: [0, 24, 0]
@@ -43,6 +43,7 @@ export const Hero: FC = () => {
                 repeatType: "loop"
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
+              aria-hidden="true"
             />
           </div>
         </a>

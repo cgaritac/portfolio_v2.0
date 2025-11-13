@@ -1,7 +1,7 @@
-import { FC, useState, useRef } from "react"
 import emailjs from '@emailjs/browser'
-import { CONTACT_FORM_CONSTANTS } from "../constants"
+import { FC, useRef, useState } from "react"
 import { toast } from 'sonner'
+import { CONTACT_FORM_CONSTANTS } from "../constants"
 
 export const ContactForm: FC = () => {
   const [form, setForm] = useState({
@@ -53,43 +53,55 @@ export const ContactForm: FC = () => {
         ref={formRef} 
         onSubmit={handleSubmit} 
         className="mt-12 flex flex-col gap-8"
+        aria-label="Contact form"
     >
         <label className="flex flex-col">
-        <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_NAME}</span>
-        <input 
+          <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_NAME}</span>
+          <input 
             type="text" 
             name="name" 
             value={form.name} 
             onChange={handleChange} 
-            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_NAME} 
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" />
+            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_NAME}
+            required
+            aria-required="true"
+            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
+          />
         </label>
         <label className="flex flex-col">
-        <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_EMAIL}</span>
-        <input 
+          <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_EMAIL}</span>
+          <input 
             type="email" 
             name="email" 
             value={form.email} 
             onChange={handleChange} 
-            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_EMAIL} 
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" />
+            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_EMAIL}
+            required
+            aria-required="true"
+            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
+          />
         </label>
         <label className="flex flex-col">
-        <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_MESSAGE}</span>
-        <textarea 
+          <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_MESSAGE}</span>
+          <textarea 
             rows={7}
             name="message" 
             value={form.message} 
             onChange={(e) => setForm({ ...form, message: e.target.value })} 
-            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_MESSAGE} 
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none" />
+            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_MESSAGE}
+            required
+            aria-required="true"
+            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none" 
+          />
         </label>
 
         <button 
-        type="submit" 
-        className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          type="submit" 
+          disabled={loading}
+          {...(loading ? { "aria-busy": "true" } : { "aria-busy": "false" })}
+          className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
         >
-        {loading ? CONTACT_FORM_CONSTANTS.SENDING : CONTACT_FORM_CONSTANTS.SEND}
+          {loading ? CONTACT_FORM_CONSTANTS.SENDING : CONTACT_FORM_CONSTANTS.SEND}
         </button>
     </form>
   )

@@ -1,6 +1,6 @@
 import { FC } from "react";
-import 'react-vertical-timeline-component/style.min.css';
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import 'react-vertical-timeline-component/style.min.css';
 import { EXPERIENCES } from "../content";
 
 interface ExperienceCardProps {
@@ -19,7 +19,9 @@ export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }: Experien
           <img 
             src={experience.icon} 
             alt={experience.company_name} 
-            className="w-[60%] h-[60%] object-contain" />
+            title={`${experience.company_name} company logo`}
+            className="w-[60%] h-[60%] object-contain" 
+          />
         </div>
       }
 

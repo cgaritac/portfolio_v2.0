@@ -8,7 +8,7 @@ import { PROJECTS } from "../content";
 
 const Works: FC = () => {
   return (
-    <>
+    <section aria-labelledby="works-title">
       <header>
         <SectionTitle 
           titleDescription={WORKS_CONSTANTS.TitleDescription} 
@@ -25,18 +25,18 @@ const Works: FC = () => {
         </motion.div>
       </div>
 
-      <div className="w-full flex flex-wrap justify-center gap-7 mt-14" role="list">
+      <div className="w-full flex flex-wrap justify-center gap-7 mt-14" role="list" aria-label="Portfolio projects">
         {PROJECTS.map((project, index) => (
-          <div key={`project-${index}`} role="listitem">
+          <article key={`project-${index}`} role="listitem" itemScope itemType="https://schema.org/CreativeWork">
             <ProjectCard 
               index={index} name={project.name}
               description={project.description}
               tags={project.tags}
               source_code_link={project.source_code_link} />
-          </div>
+          </article>
         ))}	
       </div>
-    </>
+    </section>
   )
 }
 

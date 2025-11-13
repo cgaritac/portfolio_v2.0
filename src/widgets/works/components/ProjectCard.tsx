@@ -23,7 +23,12 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
         options={{ max: 45, scale: 1, speed: 450 }}
       >
         <div className="relative w-full h-[230px]">
-          <img src={project} alt={`${name} project preview`} className="w-full h-full object-cover rounded-2xl" />
+          <img 
+            src={project} 
+            alt={`${name} project preview`} 
+            title={`Preview of ${name} project`}
+            className="w-full h-full object-cover rounded-2xl" 
+          />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <button
               type="button"
@@ -31,7 +36,13 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               onClick={() => window.open(source_code_link, "_blank")}
             >
-              <img src={github} alt="" className="w-3/4 h-3/4" aria-hidden="true" />
+              <img 
+                src={github} 
+                alt={`GitHub logo for ${name} project`} 
+                title="View source code on GitHub"
+                className="w-3/4 h-3/4" 
+                aria-hidden="true" 
+              />
             </button>
           </div>
         </div>

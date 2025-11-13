@@ -15,11 +15,21 @@ export const Navbar: FC = () => {
           aria-label="Main navigation"
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <Link to="/" className="flex items-center gap-2" onClick={() => {
+                <Link 
+                  to="/" 
+                  className="flex items-center gap-2" 
+                  title="Go to homepage"
+                  onClick={() => {
                     setActive("");
                     window.scrollTo(0, 0);
-                }}>
-                    <img src={logo} alt={NAVBAR_CONSTANTS.logo.imageAlt} className="w-9 h-9 sm:w-14 sm:h-14 object-contain shrink-0" />
+                  }}
+                >
+                    <img 
+                      src={logo} 
+                      alt={NAVBAR_CONSTANTS.logo.imageAlt} 
+                      title={`${NAVBAR_CONSTANTS.logo.Name} ${NAVBAR_CONSTANTS.logo.LastName} - ${NAVBAR_CONSTANTS.logo.JobTitle}`}
+                      className="w-9 h-9 sm:w-14 sm:h-14 object-contain shrink-0" 
+                    />
                     <p className="text-white text-[18px] font-bold cursor-pointer flex whitespace-nowrap">
                       {NAVBAR_CONSTANTS.logo.Name}
                       &nbsp;
@@ -42,7 +52,12 @@ export const Navbar: FC = () => {
                             hover:text-white text-[18px] font-medium cursor-pointer`}
                           onClick={() => setActive(link.title)}
                         >
-                            <a href={`#${link.id}`}>{link.title}</a>
+                            <a 
+                              href={`#${link.id}`} 
+                              title={`Go to ${link.title} section`}
+                            >
+                              {link.title}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -58,6 +73,7 @@ export const Navbar: FC = () => {
                       <img 
                         src={toggle ? close : menu} 
                         alt={toggle ? NAVBAR_CONSTANTS.close.imageAlt : NAVBAR_CONSTANTS.menu.imageAlt} 
+                        title={toggle ? NAVBAR_CONSTANTS.close.imageAlt : NAVBAR_CONSTANTS.menu.imageAlt}
                         className="w-7 h-7 object-contain" 
                       />
                     </button>
@@ -80,7 +96,12 @@ export const Navbar: FC = () => {
                                     setToggle(!toggle);
                                   }}
                                 >
-                                    <a href={`#${link.id}`}>{link.title}</a>
+                                    <a 
+                              href={`#${link.id}`} 
+                              title={`Go to ${link.title} section`}
+                            >
+                              {link.title}
+                            </a>
                                 </li>
                             ))}
                         </ul>

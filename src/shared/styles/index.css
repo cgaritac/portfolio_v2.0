@@ -10,6 +10,7 @@
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
   --color-purple: #915eff;
+  --color-yellow: #f5af19;
 
   --shadow-card: 0px 35px 120px -15px #211e35;
 
@@ -132,6 +133,22 @@ body, html, #root {
     to top,
     #ec008c,
     #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-text-gradient {
+  background: #f5af19; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f5af19,
+    #f12711
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

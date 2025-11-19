@@ -1,47 +1,51 @@
-//import { carrent, jobit, tripguide } from "@/shared/assets";
+import { expropriation, project, uiLibrary } from "../assets";
 
 export const PROJECTS = [
     {
-      name: "Car Rent",
+      name: "UI Component Library",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "UI Component Library is a collection of reusable UI components that can be used to build web applications. It is built with React and CSS, using storybook for documentation and testing.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "storybook",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
-      //image: carrent,
-      source_code_link: "https://github.com/",
+      image: uiLibrary,
+      source_code_link: "https://github.com/cgaritac/ui_library",
     },
     {
-      name: "Job IT",
+      name: "Expropriation Management System",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Expropriation Management System is a web application that enables users to manage the expropriation process. It is built with c# and .NET, using using blazor for the frontend and sql server for the database.",
       tags: [
         {
-          name: "react",
+          name: "c#",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: ".NET",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "blazor",
           color: "pink-text-gradient",
         },
+        {
+          name: "sql server",
+          color: "yellow-text-gradient",
+        },
       ],
-      //image: jobit,
-      source_code_link: "https://github.com/",
+      image: expropriation,
+      source_code_link: "https://github.com/cgaritac/expropriation_management_system",
     },
     {
       name: "Trip Guide",
@@ -61,7 +65,7 @@ export const PROJECTS = [
           color: "pink-text-gradient",
         },
       ],
-      //image: tripguide,
+      image: project,
       source_code_link: "https://github.com/",
     },
   ];

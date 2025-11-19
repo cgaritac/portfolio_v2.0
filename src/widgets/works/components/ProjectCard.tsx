@@ -3,7 +3,8 @@ import { fadeIn } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { Tilt } from "react-tilt";
-import { github, project } from "../assets";
+import { github } from "../assets";
+import { PROJECTS } from "../content";
 
 interface ProjectCardProps {
   index: number;
@@ -24,10 +25,10 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
       >
         <div className="relative w-full h-[230px]">
           <img 
-            src={project} 
+            src={PROJECTS[index].image} 
             alt={`${name} project preview`} 
             title={`Preview of ${name} project`}
-            className="w-full h-full object-cover rounded-2xl" 
+            className="w-full h-full object-fill rounded-2xl" 
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <button

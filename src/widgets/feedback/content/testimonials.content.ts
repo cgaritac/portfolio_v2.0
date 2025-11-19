@@ -1,3 +1,5 @@
+import { andrea, brenes, elias } from "../assets";
+
 export const TESTIMONIALS = [
     {
       testimonial:
@@ -5,7 +7,7 @@ export const TESTIMONIALS = [
       name: "Andrés Elías Vargas Ramírez",
       designation: "AEM Architect",
       company: "Kaiser Permanente",
-      image: "https://randomuser.me/api/portraits/men/4.jpg",
+      image: elias,
     },
     {
       testimonial:
@@ -13,7 +15,7 @@ export const TESTIMONIALS = [
       name: "Andrea Benavides",
       designation: "Senior Digital Project Manager",
       company: "Critical Mass Latam",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      image: andrea,
     },
     {
         testimonial:
@@ -21,6 +23,6 @@ export const TESTIMONIALS = [
         name: "Luis Brenes",
         designation: "Full Stack Developer",
         company: "Factor K Software",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+        image: brenes,
       },
   ];

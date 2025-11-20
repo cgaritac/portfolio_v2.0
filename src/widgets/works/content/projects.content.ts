@@ -1,4 +1,4 @@
-import { expropriation, helicopterGame, paceBE, paceFE, project, uiLibrary, airplanePassengers } from "../assets";
+import { expropriation, helicopterGame, paceBE, paceFE, uiLibrary, airplanePassengers } from "../assets";
 
 export const PROJECTS = [
     {

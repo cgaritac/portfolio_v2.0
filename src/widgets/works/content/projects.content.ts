@@ -1,4 +1,4 @@
-import { expropriation, project, uiLibrary } from "../assets";
+import { expropriation, helicopterGame, paceBE, paceFE, project, uiLibrary, airplanePassengers } from "../assets";
 
 export const PROJECTS = [
     {
@@ -61,7 +61,7 @@ export const PROJECTS = [
           color: "green-text-gradient",
         },
       ],
-      image: project,
+      image: paceFE,
       source_code_link: "https://github.com/cgaritac/performance_evaluation_system_FE",
     },
     {
@@ -82,7 +82,7 @@ export const PROJECTS = [
           color: "blue-text-gradient",
         },
       ],
-      image: project,
+      image: paceBE,
       source_code_link: "https://github.com/cgaritac/performance_evaluation_system_BE",
     },
     {
@@ -99,7 +99,7 @@ export const PROJECTS = [
           color: "green-text-gradient",
         },
       ],
-      image: project,
+      image: helicopterGame,
       source_code_link: "https://github.com/cgaritac/helicopter_game/blob/main/game.py",
     },
     {
@@ -116,7 +116,7 @@ export const PROJECTS = [
           color: "green-text-gradient",
         },
       ],
-      image: project,
+      image: airplanePassengers,
       source_code_link: "https://github.com/cgaritac/airplane_passengers",
     },
   ];

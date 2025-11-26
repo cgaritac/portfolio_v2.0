@@ -9,6 +9,11 @@
   --color-black-100: #100d25;
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
+  --color-green-50: #00cea8;
+  --color-green-100: #38ef7d;
+  --color-green-200: #11998e;
+  --color-green-300: #00cea8;
+  --color-green-400: #00cea8;
   --color-purple: #915eff;
   --color-yellow: #f5af19;
 
@@ -16,12 +21,20 @@
 
   --breakpoint-xs: 450px;
 
-  --bg-hero-pattern: url('/src/shared/assets/herobg.png');
+  --bg-hero-pattern: url('/src/shared/assets/herobg.jpg');
 }
 
 @layer utilities {
   .bg-hero-pattern {
     background-image: var(--bg-hero-pattern);
+
+    background-image: 
+      linear-gradient(
+        to bottom,
+        rgba(5, 8, 22, 0.45),
+        rgba(5, 8, 22, 0.35)
+      ),
+      var(--bg-hero-pattern);
   }
 }
 

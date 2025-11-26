@@ -23,7 +23,7 @@ const About: FC = () => {
         <ParagraphSplitter text={ABOUT_CONSTANTS.Presentation} />
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10" role="list" aria-label="Services and expertise">
+      <div className="mt-20 flex justify-center flex-wrap gap-10" role="list" aria-label="Services and expertise">
         {SERVICES.map((service, index) => (
           <article key={service.title} role="listitem" itemScope itemType="https://schema.org/Service">
             <ServiceCard index={index} title={service.title} icon={service.icon} />

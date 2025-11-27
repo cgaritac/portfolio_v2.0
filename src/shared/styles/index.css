@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #050816;
+  --color-primary: #050A16;
   --color-secondary: #aaa6c3;
   --color-tertiary: #151030;
   --color-black-100: #100d25;
@@ -84,6 +84,16 @@ body, html, #root {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.green-gradient {
+  background: #00cea8;
+  background: linear-gradient(-90deg, #00cea8 0%, rgba(0, 206, 168, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #00cea8 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
 }
 
 .orange-text-gradient {

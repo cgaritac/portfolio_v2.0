@@ -10,8 +10,9 @@ const Feedback: FC = () => {
       <header className={`${styles.padding} bg-green-100/10 rounded-2xl min-h-[300px] fade-bottom`}>
         <SectionTitle titleDescription="What other say" title="Testimonials." />
       </header>
+
       <div className={`${styles.paddingX} -mt-20 pb-14`} role="list" aria-label="Client testimonials">
-          <Carousel
+        <Carousel
           scrollAmount={350}
           ariaLabelPrev="Previous testimonials"
           ariaLabelNext="Next testimonials"

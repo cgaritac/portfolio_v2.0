@@ -14,17 +14,15 @@ export const ServiceCard: FC<ServiceCardProps> = ({ index, title, icon }) => {
       <Tilt className="xs:w-[250px] w-full" options={{ max: 45, scale: 1, speed: 450 }}>
         <motion.article
           variants={fadeIn({ direction: "right", type: "spring", delay: index * 0.5, duration: 0.75 })} 
-          className="w-full green-pink-gradient p-px rounded-[20px] shadow-card"
+          className="w-full green-subtle-gradient rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col shadow-card"
         >
-          <div className="bg-tertiary opacity-85 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-            <img 
-              src={icon} 
-              alt={`${title} service icon`} 
-              title={`${title} service`}
-              className="w-16 h-16 object-contain" 
-            />
-            <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
-          </div>
+          <img 
+            src={icon} 
+            alt={`${title} service icon`} 
+            title={`${title} service`}
+            className="w-16 h-16 object-contain" 
+          />
+          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
         </motion.article>
       </Tilt>
     )

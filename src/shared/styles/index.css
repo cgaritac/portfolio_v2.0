@@ -17,7 +17,8 @@
   --color-purple: #915eff;
   --color-yellow: #f5af19;
 
-  --shadow-card: 0px 35px 120px -15px #211e35;
+  --shadow-card: 0px 15px 80px -15px #211e35;
+  --shadow-card-hover: 0px 15px 80px -15px #00b300;
 
   --breakpoint-xs: 450px;
 
@@ -35,6 +36,27 @@
         rgba(5, 8, 22, 0.35)
       ),
       var(--bg-hero-pattern);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fade-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  .fade-scroll-x {
+    --fade-left: black;
+    --fade-right: black;
+    -webkit-mask-image: linear-gradient(to right, var(--fade-left), black 2%, black 98%, var(--fade-right));
+    mask-image: linear-gradient(to right, var(--fade-left), black 2%, black 98%, var(--fade-right));
   }
 }
 
@@ -54,6 +76,15 @@ body, html, #root {
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
+}
+
+.vertical-timeline-element-content {
+  transition: box-shadow 0.3s ease;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.vertical-timeline-element-content:hover {
+  box-shadow: var(--shadow-card-hover) !important;
 }
 
 .black-gradient {
@@ -81,9 +112,13 @@ body, html, #root {
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
+  background: #00cea8;
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.green-subtle-gradient {
+  background: linear-gradient(135deg, rgba(17, 153, 142, 0.35) 0%, rgba(0, 206, 168, 0.15) 50%, rgba(56, 239, 125, 0.25) 100%);
 }
 
 .green-gradient {

@@ -20,7 +20,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
       variants={fadeIn({ direction: "up", type: "spring", delay: index * 0.5, duration: 0.75 })}
     >
       <Tilt 
-        className="bg-tertiary rounded-2xl p-5 sm:w-[360px] w-full h-[510px]" 
+        className="bg-green-50/15 rounded-2xl p-5 sm:w-[360px] w-full h-[510px]" 
         options={{ max: 45, scale: 1, speed: 450 }}
       >
         <div className="relative w-full h-[230px]">

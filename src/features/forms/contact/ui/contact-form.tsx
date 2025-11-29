@@ -65,7 +65,7 @@ export const ContactForm: FC = () => {
             placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_NAME}
             required
             aria-required="true"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
+            className="bg-green-100/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
           />
         </label>
         <label className="flex flex-col">
@@ -78,7 +78,7 @@ export const ContactForm: FC = () => {
             placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_EMAIL}
             required
             aria-required="true"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
+            className="bg-green-100/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
           />
         </label>
         <label className="flex flex-col">
@@ -91,18 +91,21 @@ export const ContactForm: FC = () => {
             placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_MESSAGE}
             required
             aria-required="true"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none" 
+            className="bg-green-100/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none" 
           />
         </label>
 
-        <button 
-          type="submit" 
-          disabled={loading}
-          {...(loading ? { "aria-busy": "true" } : { "aria-busy": "false" })}
-          className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          {loading ? CONTACT_FORM_CONSTANTS.SENDING : CONTACT_FORM_CONSTANTS.SEND}
-        </button>
+        <div className="flex justify-center">
+          <button 
+            type="submit" 
+            disabled={loading}
+            {...(loading ? { "aria-busy": "true" } : { "aria-busy": "false" })}
+            className="bg-green-200/40 py-3 px-8 outline-none w-fit text-white font-bold shadow-sm shadow-green-200/40 rounded-xl cursor-pointer 
+                    disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 ease-in-out hover:bg-green-200/60 hover:shadow-sm hover:shadow-green-200/60"
+          >
+            {loading ? CONTACT_FORM_CONSTANTS.SENDING : CONTACT_FORM_CONSTANTS.SEND}
+          </button>
+        </div>
     </form>
   )
 }

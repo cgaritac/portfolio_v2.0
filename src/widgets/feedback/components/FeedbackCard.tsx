@@ -15,7 +15,7 @@ export const FeedbackCard: FC<FeedbackCardProps> = ({ index, testimonial, name, 
   return (
     <motion.article
       variants={fadeIn({ direction: "up", type: "spring", delay: index * 0.5, duration: 0.75 })}
-      className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+      className="bg-green-100/15 backdrop-blur-md p-10 rounded-3xl xs:w-[320px] w-full"
     >
       <blockquote className="mt-1">
         <p className="text-white font-black text-[48px] leading-none" aria-hidden="true">"</p>

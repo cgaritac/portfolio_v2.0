@@ -36,6 +36,27 @@
       ),
       var(--bg-hero-pattern);
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fade-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  .fade-scroll-x {
+    --fade-left: black;
+    --fade-right: black;
+    -webkit-mask-image: linear-gradient(to right, var(--fade-left), black 2%, black 98%, var(--fade-right));
+    mask-image: linear-gradient(to right, var(--fade-left), black 2%, black 98%, var(--fade-right));
+  }
 }
 
 body, html, #root {

@@ -6,7 +6,8 @@
     "drei",
     "maath",
     "preload",
-    "threejs"
+    "threejs",
+    "herobg"
   ],
   "ignorePaths": [
     "node_modules",

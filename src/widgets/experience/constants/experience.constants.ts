@@ -30,8 +30,9 @@ export const EXPERIENCE_CONSTANTS = {
             "Integrate authentication systems with Microsoft Entra ID (Azure AD) and Clerk.",
             "Develop back-end services with C#, .NET, and Docker.",
             "Configure and maintain CI/CD pipelines in Microsoft Azure, automating build, test, and deployment processes.",
-            "Collaborate with QA to deliver high-quality, bug-free code, ensuring requirementscompliance.",
+            "Collaborate with QA to deliver high-quality, bug-free code, ensuring requirements compliance.",
             "Design and update MySQL databases, ensuring data integrity and efficient query performance.",
+            "Analyze Pull Requests (PRs) to ensure code quality and compliance with best practices as a Developer Lead.",
         ],
     },
 }

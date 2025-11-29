@@ -112,9 +112,13 @@ body, html, #root {
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
+  background: #00cea8;
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.green-subtle-gradient {
+  background: linear-gradient(135deg, rgba(17, 153, 142, 0.35) 0%, rgba(0, 206, 168, 0.15) 50%, rgba(56, 239, 125, 0.25) 100%);
 }
 
 .green-gradient {

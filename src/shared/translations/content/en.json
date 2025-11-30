@@ -73,6 +73,10 @@
       ]
     }
   },
+  "languageToggle": {
+    "ariaLabelChangeLanguage": "Change language",
+    "changeLanguage": "Change language"
+  },
   "tech": {
     "titleDescription": "Technologies and skills",
     "title": "Technical skills.",
@@ -119,27 +123,39 @@
     "testimonials": {
       "elias": {
         "testimonial": "Carlos is very quick learner, and excels at taking care of his area of expertise in Content Authoring and FE development (you name it and he knows it).",
-        "designation": "AEM Architect"
+        "designation": "AEM Architect",
+        "imageAlt": "Andrés Elías Vargas profile picture",
+        "imageTitle": "Andrés Elías Vargas - AEM Architect at Kaiser Permanente"
       },
       "andrea": {
         "testimonial": "His ability to balance multiple projects and prioritize tasks effectively has been instrumental in the successful execution of the digital initiatives at our company.",
-        "designation": "Senior Digital Project Manager"
+        "designation": "Senior Digital Project Manager",
+        "imageAlt": "Andrea Benavides profile picture",
+        "imageTitle": "Andrea Benavides - Senior Digital Project Manager at Critical Mass Latam"
       },
       "brenes": {
         "testimonial": "Carlos is exceptional. He is always willing to help with any technical questions, whether they relate to backend or frontend development.",
-        "designation": "Full Stack Developer"
+        "designation": "Full Stack Developer",
+        "imageAlt": "Luis Brenes profile picture",
+        "imageTitle": "Luis Brenes - Full Stack Developer at Factor K Software"
       },
       "adrian": {
         "testimonial": "Carlos's proactive approach and ability to think critically make him an asset to any technology-focused role.",
-        "designation": "AEM Content Author Lead"
+        "designation": "AEM Content Author Lead",
+        "imageAlt": "Adrian Carmiol profile picture",
+        "imageTitle": "Adrian Carmiol - AEM Content Author Lead at Critical Mass Latam"
       },
       "floriana": {
         "testimonial": "Carlos exhibits a strong sense of ownership, consistently delivering his work with precision and completeness.",
-        "designation": "Project Manager"
+        "designation": "Project Manager",
+        "imageAlt": "Floriana Fonseca profile picture",
+        "imageTitle": "Floriana Fonseca - Project Manager at Critical Mass Latam"
       },
       "paolo": {
         "testimonial": "Carlos is a quick learner and has a great attitude. He is always willing to help with any technical questions, whether they relate to backend or frontend development.",
-        "designation": "Senior Content Author Lead"
+        "designation": "Senior Content Author Lead",
+        "imageAlt": "Paolo Vargas profile picture",
+        "imageTitle": "Paolo Vargas - Senior Content Author Lead at Critical Mass Latam"
       }
     }
   },

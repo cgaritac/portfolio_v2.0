@@ -73,6 +73,10 @@
       ]
     }
   },
+  "languageToggle": {
+    "ariaLabelChangeLanguage": "Cambiar idioma",
+    "changeLanguage": "Cambiar idioma"
+  },
   "tech": {
     "titleDescription": "Tecnologías y habilidades",
     "title": "Habilidades técnicas.",
@@ -119,27 +123,39 @@
     "testimonials": {
       "elias": {
         "testimonial": "Carlos aprende muy rápido y sobresale en el cuidado de su área de experiencia en Autoría de Contenido y desarrollo FE (lo que sea, él lo sabe).",
-        "designation": "Arquitecto AEM"
+        "designation": "Arquitecto AEM",
+        "imageAlt": "Elias Torres profile picture",
+        "imageTitle": "Elias Torres - Arquitecto AEM at Sibu Digital"
       },
       "andrea": {
         "testimonial": "Su capacidad para equilibrar múltiples proyectos y priorizar tareas efectivamente ha sido fundamental en la ejecución exitosa de las iniciativas digitales en nuestra empresa.",
-        "designation": "Gerente de Proyectos Digitales Senior"
+        "designation": "Gerente de Proyectos Digitales Senior",
+        "imageAlt": "Andrea Benavides profile picture",
+        "imageTitle": "Andrea Benavides - Gerente de Proyectos Digitales Senior at Critical Mass Latam"
       },
       "brenes": {
         "testimonial": "Carlos es excepcional. Siempre está dispuesto a ayudar con cualquier pregunta técnica, ya sea relacionada con desarrollo backend o frontend.",
-        "designation": "Desarrollador Full Stack"
+        "designation": "Desarrollador Full Stack",
+        "imageAlt": "Luis Brenes profile picture",
+        "imageTitle": "Luis Brenes - Desarrollador Full Stack at Factor K Software"
       },
       "adrian": {
         "testimonial": "El enfoque proactivo de Carlos y su capacidad para pensar críticamente lo convierten en un activo para cualquier rol enfocado en tecnología.",
-        "designation": "Líder de Autoría de Contenido AEM"
+        "designation": "Líder de Autoría de Contenido AEM",
+        "imageAlt": "Adrian Carmiol profile picture",
+        "imageTitle": "Adrian Carmiol - Líder de Autoría de Contenido AEM at Critical Mass Latam"
       },
       "floriana": {
         "testimonial": "Carlos exhibe un fuerte sentido de pertenencia, entregando consistentemente su trabajo con precisión y completitud.",
-        "designation": "Gerente de Proyectos"
+        "designation": "Gerente de Proyectos",
+        "imageAlt": "Floriana Fonseca profile picture",
+        "imageTitle": "Floriana Fonseca - Gerente de Proyectos at Critical Mass Latam"
       },
       "paolo": {
         "testimonial": "Carlos aprende rápido y tiene una gran actitud. Siempre está dispuesto a ayudar con cualquier pregunta técnica, ya sea relacionada con desarrollo backend o frontend.",
-        "designation": "Líder Senior de Autoría de Contenido"
+        "designation": "Líder Senior de Autoría de Contenido",
+        "imageAlt": "Paolo Vargas profile picture",
+        "imageTitle": "Paolo Vargas - Líder Senior de Autoría de Contenido at Critical Mass Latam"
       }
     }
   },

@@ -19,6 +19,7 @@ export const Navbar: FC = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <LogoRefresh setActive={setActive} />
         <Menu active={active} setActive={setActive} />
+        
         <div className="md:hidden flex flex-1 justify-end items-center">
           <LanguageToggle />
           <button

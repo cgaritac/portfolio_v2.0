@@ -18,8 +18,8 @@ export const LanguageToggle: React.FC = () => {
     <button
       className="mx-2 shadow-lg cursor-pointer"
       onClick={handleClick}
-      aria-label={`change-to-${nextLang}`}
-      title={t(`global.changeLanguage`)}
+      aria-label={t(`languageToggle.ariaLabelChangeLanguage`)}
+      title={t(`languageToggle.changeLanguage`)}
     >
       {nextFlag}
     </button>

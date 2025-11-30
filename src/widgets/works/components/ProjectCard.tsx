@@ -1,5 +1,6 @@
 import { ParagraphSplitter } from "@/features";
 import { fadeIn } from "@/shared";
+import { logButtonClick } from "@/shared/analytics/analytics";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { Tilt } from "react-tilt";
@@ -35,7 +36,10 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
               type="button"
               aria-label={`View source code for ${name}`}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => {
+                logButtonClick(`github_project_${name}`)
+                window.open(source_code_link, "_blank")
+              }}
             >
               <img 
                 src={github} 

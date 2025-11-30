@@ -1,5 +1,5 @@
 import { ComputersCanvas } from "@/features";
-import { styles } from "@/shared";
+import { styles,logButtonClick } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { HERO_CONSTANTS } from "../constants";
@@ -35,6 +35,7 @@ export const Hero: FC = () => {
           href="#about" 
           aria-label="Scroll to about section"
           title="Scroll to about section"
+          onClick={() => logButtonClick('hero_scroll_to_about')}
         >
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2" role="img" aria-label="Scroll indicator">
             <motion.div

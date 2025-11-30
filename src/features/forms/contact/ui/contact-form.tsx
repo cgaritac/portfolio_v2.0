@@ -1,4 +1,5 @@
 import emailjs from '@emailjs/browser'
+import { logButtonClick } from '@/shared/analytics/analytics'
 import { FC, useRef, useState } from "react"
 import { toast } from 'sonner'
 import { CONTACT_FORM_CONSTANTS } from "../constants"
@@ -21,6 +22,7 @@ export const ContactForm: FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
+    logButtonClick('contact_form_submit')
 
     emailjs.send(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,

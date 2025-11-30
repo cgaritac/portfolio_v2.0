@@ -1,6 +1,6 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { NAVBAR_CONSTANTS } from "../constants/navbar.constants";
 import { logo } from "../assets";
 
 interface LogoRefreshProps {
@@ -8,6 +8,8 @@ interface LogoRefreshProps {
 }
 
 export const LogoRefresh: FC<LogoRefreshProps> = ({ setActive }) => {
+  const { t } = useTranslation();
+
   return (
     <Link
       to="/"
@@ -20,17 +22,17 @@ export const LogoRefresh: FC<LogoRefreshProps> = ({ setActive }) => {
     >
       <img
         src={logo}
-        alt={NAVBAR_CONSTANTS.logo.imageAlt}
-        title={`${NAVBAR_CONSTANTS.logo.Name} ${NAVBAR_CONSTANTS.logo.LastName} - ${NAVBAR_CONSTANTS.logo.JobTitle}`}
+        alt={t("navbar.logoAlt")}
+        title={`${t("navbar.name")} ${t("navbar.lastName")} - ${t("navbar.jobTitle")}`}
         className="w-9 h-9 sm:w-14 sm:h-14 object-contain shrink-0"
       />
       <p className="text-white text-[18px] font-bold cursor-pointer flex whitespace-nowrap">
-        {NAVBAR_CONSTANTS.logo.Name}
+        {t("navbar.name")}
         &nbsp;
         <span className="hidden md:inline">
-          {NAVBAR_CONSTANTS.logo.LastName}
+          {t("navbar.lastName")}
           &nbsp; | &nbsp;
-          {NAVBAR_CONSTANTS.logo.JobTitle}
+          {t("navbar.jobTitle")}
         </span>
       </p>
     </Link>

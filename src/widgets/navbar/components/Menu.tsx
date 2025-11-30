@@ -1,5 +1,7 @@
 import { FC } from "react";
-import { NAV_LINKS } from "../links";
+import { useTranslation } from "react-i18next";
+import { useNavLinks } from "../hooks";
+import { LanguageToggle } from "@/features";
 
 interface MenuProps {
   active: string;
@@ -14,6 +16,9 @@ export const Menu: FC<MenuProps> = ({
   isMobile = false,
   onLinkClick 
 }) => {
+  const { t } = useTranslation();
+  const navLinks = useNavLinks();
+
   const handleClick = (title: string) => {
     setActive(title);
     onLinkClick?.();
@@ -29,7 +34,8 @@ export const Menu: FC<MenuProps> = ({
 
   const menuContent = (
     <ul className={listClasses}>
-      {NAV_LINKS.map((link) => (
+      {!isMobile && <LanguageToggle />}
+      {navLinks.map((link) => (
         <li
           key={link.id}
           className={`${
@@ -53,7 +59,7 @@ export const Menu: FC<MenuProps> = ({
       <nav
         id="mobile-menu"
         className="p-6 black-gradient absolute top-16 right-0 mx-4 my-2 min-w-[135px] z-10 rounded-xl"
-        aria-label="Mobile navigation menu"
+        aria-label={t("navbar.ariaLabelMobile")}
       >
         {menuContent}
       </nav>

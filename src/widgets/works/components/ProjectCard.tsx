@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 import { FC } from "react";
 import { Tilt } from "react-tilt";
 import { github } from "../assets";
-import { PROJECTS } from "../content";
 
 interface ProjectCardProps {
   index: number;
   name: string;
   description: string;
   tags: { name: string; color: string }[];
+  image: string;
   source_code_link: string;
 }
 
-export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, tags, source_code_link }) => {
+export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.article
       variants={fadeIn({ direction: "up", type: "spring", delay: index * 0.5, duration: 0.75 })}
@@ -26,7 +26,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({ index, name, description, ta
       >
         <div className="relative w-full h-[230px]">
           <img 
-            src={PROJECTS[index].image} 
+            src={image} 
             alt={`${name} project preview`} 
             title={`Preview of ${name} project`}
             className="w-full h-full object-fill rounded-2xl" 

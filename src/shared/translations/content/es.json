@@ -1,0 +1,166 @@
+{
+  "hero": {
+    "title": "Hola, soy",
+    "name": "Carlos",
+    "subtitle": "Desarrollo soluciones de software",
+    "subtitle2": "y aplicaciones web",
+    "scrollToAbout": "Desplazarse a la sección sobre mí",
+    "ariaLabelSection": "Sección principal",
+    "ariaLabelScrollIndicator": "Indicador de desplazamiento"
+  },
+  "navbar": {
+    "name": "Carlos",
+    "lastName": "Garita",
+    "jobTitle": "Desarrollador Full-Stack",
+    "logoAlt": "cgc-logo",
+    "menuAlt": "Abrir menú",
+    "closeAlt": "Cerrar menú",
+    "ariaLabelMain": "Navegación principal",
+    "ariaLabelMobile": "Menú de navegación móvil"
+  },
+  "navLinks": {
+    "about": "Sobre mí",
+    "work": "Experiencia",
+    "contact": "Contacto"
+  },
+  "about": {
+    "titleDescription": "Introducción",
+    "title": "Resumen.",
+    "presentation": "Como ingeniero full-stack con una sólida base en ciencias de la computación, me especializo en diseñar y entregar soluciones de software integrales.\n\nMi experiencia abarca el desarrollo de interfaces de usuario responsivas, el diseño de servicios back-end robustos, la gestión de bases de datos y el despliegue de aplicaciones en entornos cloud.\n\nMe apasiona resolver desafíos técnicos complejos y colaborar para transformar conceptos abstractos en experiencias digitales tangibles y de alto rendimiento, adoptando constantemente el aprendizaje continuo y la evolución tecnológica.",
+    "services": {
+      "frontend": "Desarrollador Frontend",
+      "backend": "Desarrollador Backend",
+      "software": "Ingeniero de Software",
+      "database": "Administrador de Base de Datos"
+    },
+    "ariaLabelServices": "Servicios y experiencia"
+  },
+  "experience": {
+    "titleDescription": "Lo que he hecho hasta ahora",
+    "title": "Experiencia Laboral.",
+    "sibu": {
+      "date": "Abril 2023 – Junio 2023",
+      "points": [
+        "Realicé actividades de autoría en AEM, incluyendo entrada de contenido, formato y publicación mediante plantillas predefinidas y componentes reutilizables.",
+        "Gestioné y organicé activos digitales en AEM DAM, asegurando el uso adecuado, etiquetado de metadatos y consistencia en múltiples campañas.",
+        "Colaboré con diseñadores y desarrolladores para mantener la consistencia de marca, usabilidad y estándares de diseño responsivo.",
+        "Verifiqué la precisión del contenido y visualización en navegadores y dispositivos, resolviendo problemas relacionados con formato y maquetación.",
+        "Apoyé a stakeholders internos documentando mejores prácticas de autoría y asistiendo en la resolución de problemas relacionados con contenido."
+      ]
+    },
+    "criticalMass": {
+      "date": "Julio 2023 – Octubre 2023",
+      "points": [
+        "Ejecuté tareas de autoría en Adobe Experience Manager (AEM), creando y actualizando páginas web asegurando la alineación con los requisitos de marca y técnicos del cliente.",
+        "Personalicé y configuré componentes de AEM usando HTML, CSS y JavaScript, adaptando el contenido para cumplir con las especificaciones de negocio y diseño.",
+        "Colaboré con equipos de Creatividad, Negocio, Tecnología y QA para entregar soluciones de contenido a tiempo y con altos estándares de calidad.",
+        "Realicé validación de contenido, pruebas funcionales y verificaciones de accesibilidad para garantizar el cumplimiento antes del lanzamiento.",
+        "Proporcioné retroalimentación sobre plantillas y flujos de trabajo de AEM, contribuyendo a la mejora continua de los procesos de autoría de contenido."
+      ]
+    },
+    "factorK": {
+      "date": "Julio 2024 – Presente",
+      "points": [
+        "Desarrollo y mantengo aplicaciones web siguiendo la metodología SCRUM.",
+        "Implemento soluciones front-end usando JavaScript, Angular y React, aplicando la arquitectura Feature-Sliced Design (FSD).",
+        "Construyo e integro arquitecturas de microfrontend usando single-spa.",
+        "Integro sistemas de autenticación con Microsoft Entra ID (Azure AD) y Clerk.",
+        "Desarrollo servicios back-end con C#, .NET y Docker.",
+        "Configuro y mantengo pipelines CI/CD en Microsoft Azure, automatizando procesos de build, pruebas y despliegue.",
+        "Colaboro con QA para entregar código de alta calidad y libre de errores, asegurando el cumplimiento de requisitos.",
+        "Diseño y actualizo bases de datos MySQL, asegurando la integridad de datos y rendimiento eficiente de consultas.",
+        "Analizo Pull Requests (PRs) para asegurar la calidad del código y el cumplimiento de mejores prácticas como Developer Lead."
+      ]
+    }
+  },
+  "tech": {
+    "titleDescription": "Tecnologías y habilidades",
+    "title": "Habilidades técnicas.",
+    "ariaLabelTechnologies": "Tecnologías y habilidades"
+  },
+  "works": {
+    "titleDescription": "En lo que he trabajado",
+    "title": "Proyectos.",
+    "description": "Los proyectos en los que he trabajado se listan a continuación. Siéntete libre de revisarlos y darme tu retroalimentación.\nCada proyecto está brevemente descrito con enlaces a repositorios de código. Refleja mi capacidad para resolver problemas, trabajar con diferentes tecnologías y gestionar proyectos efectivamente.",
+    "ariaLabelProjects": "Proyectos del portafolio",
+    "projects": {
+      "uiLibrary": {
+        "name": "Librería de Componentes UI",
+        "description": "Librería de Componentes UI es una colección de componentes UI reutilizables que pueden usarse para construir aplicaciones web. Está construida con React y CSS, usando storybook para documentación y pruebas."
+      },
+      "expropriation": {
+        "name": "Sistema de Gestión de Expropiaciones",
+        "description": "Sistema de Gestión de Expropiaciones es una aplicación web que permite a los usuarios gestionar el proceso de expropiación. Está construida con c# y .NET, usando blazor para el frontend y sql server para la base de datos."
+      },
+      "paceFE": {
+        "name": "Sistema de Evaluación de Desempeño Frontend",
+        "description": "Sistema de Evaluación de Desempeño Frontend es una aplicación web que permite a una empresa gestionar el proceso de evaluación de desempeño. Está construida con React y tailwind css."
+      },
+      "paceBE": {
+        "name": "Sistema de Evaluación de Desempeño Backend",
+        "description": "Sistema de Evaluación de Desempeño Backend es una aplicación web que permite a una empresa gestionar el proceso de evaluación de desempeño. Está construida con c# y .NET, usando mysql para la base de datos."
+      },
+      "helicopter": {
+        "name": "Juego de helicóptero",
+        "description": "Helicóptero es un juego sobre una nave que intenta no chocar contra obstáculos. Permite al usuario controlar un helicóptero y evitar obstáculos. Está construido con python y pygame."
+      },
+      "airplane": {
+        "name": "Pasajeros de avión",
+        "description": "Pasajeros de avión es un proyecto que simula el registro de pasajeros de una aerolínea. Está construido con java y swing."
+      }
+    }
+  },
+  "feedback": {
+    "titleDescription": "Lo que otros dicen",
+    "title": "Testimonios.",
+    "ariaLabelPrev": "Testimonios anteriores",
+    "ariaLabelNext": "Siguientes testimonios",
+    "ariaLabelTestimonials": "Testimonios de clientes",
+    "testimonials": {
+      "elias": {
+        "testimonial": "Carlos aprende muy rápido y sobresale en el cuidado de su área de experiencia en Autoría de Contenido y desarrollo FE (lo que sea, él lo sabe).",
+        "designation": "Arquitecto AEM"
+      },
+      "andrea": {
+        "testimonial": "Su capacidad para equilibrar múltiples proyectos y priorizar tareas efectivamente ha sido fundamental en la ejecución exitosa de las iniciativas digitales en nuestra empresa.",
+        "designation": "Gerente de Proyectos Digitales Senior"
+      },
+      "brenes": {
+        "testimonial": "Carlos es excepcional. Siempre está dispuesto a ayudar con cualquier pregunta técnica, ya sea relacionada con desarrollo backend o frontend.",
+        "designation": "Desarrollador Full Stack"
+      },
+      "adrian": {
+        "testimonial": "El enfoque proactivo de Carlos y su capacidad para pensar críticamente lo convierten en un activo para cualquier rol enfocado en tecnología.",
+        "designation": "Líder de Autoría de Contenido AEM"
+      },
+      "floriana": {
+        "testimonial": "Carlos exhibe un fuerte sentido de pertenencia, entregando consistentemente su trabajo con precisión y completitud.",
+        "designation": "Gerente de Proyectos"
+      },
+      "paolo": {
+        "testimonial": "Carlos aprende rápido y tiene una gran actitud. Siempre está dispuesto a ayudar con cualquier pregunta técnica, ya sea relacionada con desarrollo backend o frontend.",
+        "designation": "Líder Senior de Autoría de Contenido"
+      }
+    }
+  },
+  "contact": {
+    "titleDescription": "Ponte en contacto",
+    "title": "Contacto.",
+    "ariaLabelSection": "Sección de contacto",
+    "ariaLabelEarth": "Visualización 3D de la Tierra",
+    "form": {
+      "ariaLabelForm": "Formulario de contacto",
+      "yourName": "Tu Nombre",
+      "yourEmail": "Tu Correo",
+      "yourMessage": "Tu Mensaje",
+      "placeholderName": "¿Cuál es tu nombre?",
+      "placeholderEmail": "¿Cuál es tu correo?",
+      "placeholderMessage": "¿Qué quieres decir?",
+      "send": "Enviar",
+      "sending": "Enviando...",
+      "successMessage": "¡Gracias por contactarme! Te responderé pronto.",
+      "errorMessage": "Algo salió mal.",
+      "titleContactForm": "Formulario de Contacto del Portafolio"
+    }
+  }
+}

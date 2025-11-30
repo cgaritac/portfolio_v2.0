@@ -1,4 +1,5 @@
 import '@/shared/styles/index.css'
+import '@/shared/translations/i18n'
 import 'react'
 import { StrictMode } from 'react'
 import 'react-dom'

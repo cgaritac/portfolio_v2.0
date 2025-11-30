@@ -1,6 +1,7 @@
 import { fadeIn } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 interface FeedbackCardProps {
   index: number;
@@ -12,26 +13,28 @@ interface FeedbackCardProps {
 }
 
 export const FeedbackCard: FC<FeedbackCardProps> = ({ index, testimonial, name, designation, company, image }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.article
       variants={fadeIn({ direction: "up", type: "spring", delay: index * 0.5, duration: 0.75 })}
-      className="bg-green-100/15 backdrop-blur-md p-10 rounded-3xl xs:w-[320px] w-full"
+      className="bg-green-100/15 backdrop-blur-md xs:p-10 p-4 rounded-3xl xs:w-[320px] w-[190px] min-h-[380px]"
     >
       <blockquote className="mt-1">
-        <p className="text-white font-black text-[48px] leading-none" aria-hidden="true">"</p>
-        <p className="text-white text-[18px] tracking-wider h-[230px]">{testimonial}</p>
-        <footer className="mt-7 flex justify-between items-center gap-1">
+        <p className="text-white font-black xs:text-[48px] text-[32px] leading-none" aria-hidden="true">"</p>
+        <p className="text-white xs:text-[18px] text-[14px] tracking-wider xs:min-h-[230px] min-h-[210px]">{testimonial}</p>
+        <footer className="xs:mt-7 mt-4 flex justify-between items-center gap-1">
           <div className="flex-1 flex flex-col">
-            <cite className="text-white font-medium text-[16px] not-italic">
+            <cite className="text-white font-medium xs:text-[16px] text-[12px] not-italic">
               <span className="blue-text-gradient">@</span>
               {name}
             </cite>
-            <p className="mt-1 text-secondary text-[12px]">{designation} of {company}</p>
+            <p className="mt-1 text-secondary xs:text-[12px] text-[10px]">{designation} of {company}</p>
           </div>
           <img
             src={image}
-            alt={`${name} profile picture`}
-            title={`${name} - ${designation} at ${company}`}
+            alt={t(`feedback.testimonials.${name}.imageAlt`)}
+            title={t(`feedback.testimonials.${name}.imageTitle`)}
             className="w-10 h-10 rounded-full object-cover"
           />
         </footer>

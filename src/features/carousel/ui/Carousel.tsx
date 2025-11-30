@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react";
 import { useCarousel } from "../hooks";
 import { CarouselArrow } from "../components";
+import { useSmallSize } from "@/shared";
 
 interface CarouselProps {
   children: ReactNode;
@@ -14,13 +15,17 @@ interface CarouselProps {
 
 export const Carousel: FC<CarouselProps> = ({
   children,
-  scrollAmount = 350,
+  scrollAmount,
   gap = "gap-7",
   ariaLabelPrev = "Previous items",
   ariaLabelNext = "Next items",
   className = "",
   itemsContainerClassName = "",
 }) => {
+  const { isSmallScreen } = useSmallSize();
+  
+  scrollAmount = isSmallScreen ? 250 : 350;
+
   const {
     scrollContainerRef,
     canScrollLeft,

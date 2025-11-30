@@ -1,0 +1,182 @@
+{
+  "hero": {
+    "title": "Hi, I'm",
+    "name": "Carlos",
+    "subtitle": "I develop software solutions",
+    "subtitle2": "and web applications",
+    "scrollToAbout": "Scroll to about section",
+    "ariaLabelSection": "Hero section",
+    "ariaLabelScrollIndicator": "Scroll indicator"
+  },
+  "navbar": {
+    "name": "Carlos",
+    "lastName": "Garita",
+    "jobTitle": "Full-Stack Developer",
+    "logoAlt": "cgc-logo",
+    "menuAlt": "Open menu",
+    "closeAlt": "Close menu",
+    "ariaLabelMain": "Main navigation",
+    "ariaLabelMobile": "Mobile navigation menu"
+  },
+  "navLinks": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "about": {
+    "titleDescription": "Introduction",
+    "title": "Overview.",
+    "presentation": "As a full-stack engineer with a robust foundation in computer science, I specialize in architecting and delivering comprehensive software solutions.\n\nMy expertise encompasses developing responsive user interfaces, designing robust back-end services, managing databases, and deploying applications in cloud environments.\n\nI thrive on solving complex technical challenges and collaborating to translate abstract concepts into tangible, high-performing digital experiences, consistently embracing continuous learning and technological evolution.",
+    "services": {
+      "frontend": "Frontend Developer",
+      "backend": "Backend Developer",
+      "software": "Software Engineer",
+      "database": "Database Administrator"
+    },
+    "ariaLabelServices": "Services and expertise"
+  },
+  "experience": {
+    "titleDescription": "What I have done so far",
+    "title": "Work Experience.",
+    "sibu": {
+      "date": "April 2023 – June 2023",
+      "points": [
+        "Performed AEM authoring activities, including content entry, formatting, and publishing through predefined templates and reusable components.",
+        "Managed and organized digital assets within AEM DAM, ensuring proper usage, metadata tagging, and consistency across multiple campaigns.",
+        "Collaborated with designers and developers to maintain brand consistency, usability, and responsive design standards.",
+        "Verified content accuracy and display across browsers and devices, resolving issues related to formatting and layout.",
+        "Supported internal stakeholders by documenting authoring best practices and assisting in troubleshooting content-related issues."
+      ]
+    },
+    "criticalMass": {
+      "date": "July 2023 – October 2023",
+      "points": [
+        "Executed authoring tasks in Adobe Experience Manager (AEM), creating and updating web pages while ensuring alignment with client brand and technical requirements.",
+        "Customized and configured AEM components using HTML, CSS, and JavaScript, adapting content to meet business and design specifications.",
+        "Partnered with Creative, Business, Technology, and QA teams to deliver content solutions on time and with high quality standards.",
+        "Conducted content validation, functional testing, and accessibility checks to guarantee compliance before release.",
+        "Provided feedback on AEM templates and workflows, contributing to continuous improvement of content authoring processes."
+      ]
+    },
+    "factorK": {
+      "date": "July 2024 – Present",
+      "points": [
+        "Develop and maintain web applications following SCRUM methodology.",
+        "Implement front-end solutions using JavaScript, Angular, and React, applying Feature-Sliced Design (FSD) architecture.",
+        "Build and integrate microfrontend architectures using single-spa.",
+        "Integrate authentication systems with Microsoft Entra ID (Azure AD) and Clerk.",
+        "Develop back-end services with C#, .NET, and Docker.",
+        "Configure and maintain CI/CD pipelines in Microsoft Azure, automating build, test, and deployment processes.",
+        "Collaborate with QA to deliver high-quality, bug-free code, ensuring requirements compliance.",
+        "Design and update MySQL databases, ensuring data integrity and efficient query performance.",
+        "Analyze Pull Requests (PRs) to ensure code quality and compliance with best practices as a Developer Lead."
+      ]
+    }
+  },
+  "languageToggle": {
+    "ariaLabelChangeLanguage": "Change language",
+    "changeLanguage": "Change language"
+  },
+  "tech": {
+    "titleDescription": "Technologies and skills",
+    "title": "Technical skills.",
+    "ariaLabelTechnologies": "Technologies and skills"
+  },
+  "works": {
+    "titleDescription": "What I have worked on",
+    "title": "Projects.",
+    "description": "The projects I have worked on are listed below. Feel free to check them out and give me your feedback.\nEach project is briefly described with links to code repositories. It reflects my ability to solve problems, work with different technologies, and manage projects effectively.",
+    "ariaLabelProjects": "Portfolio projects",
+    "projects": {
+      "uiLibrary": {
+        "name": "UI Component Library",
+        "description": "UI Component Library is a collection of reusable UI components that can be used to build web applications. It is built with React and CSS, using storybook for documentation and testing."
+      },
+      "expropriation": {
+        "name": "Expropriation Management System",
+        "description": "Expropriation Management System is a web application that enables users to manage the expropriation process. It is built with c# and .NET, using using blazor for the frontend and sql server for the database."
+      },
+      "paceFE": {
+        "name": "Performance Evaluation System Frontend",
+        "description": "Performance Evaluation System Frontend is a web application that enables a company to manage the performance evaluation process. It is built with React and tailwind css."
+      },
+      "paceBE": {
+        "name": "Performance Evaluation System Backend",
+        "description": "Performance Evaluation System Backend is a web application that enables a company to manage the performance evaluation process. It is built with c# and .NET, using mysql for the database."
+      },
+      "helicopter": {
+        "name": "Helicopter game",
+        "description": "Helicopter is a game about a vessel that tries not to crash into obstacles. It enables a user to control a helicopter and avoid obstacles. It is built with python and pygame."
+      },
+      "airplane": {
+        "name": "Airplane passengers",
+        "description": "Airplane passengers is a project that simulates the registration of passengers of an airline. It is built with java and swing."
+      }
+    }
+  },
+  "feedback": {
+    "titleDescription": "What others say",
+    "title": "Testimonials.",
+    "ariaLabelPrev": "Previous testimonials",
+    "ariaLabelNext": "Next testimonials",
+    "ariaLabelTestimonials": "Client testimonials",
+    "testimonials": {
+      "elias": {
+        "testimonial": "Carlos is very quick learner, and excels at taking care of his area of expertise in Content Authoring and FE development (you name it and he knows it).",
+        "designation": "AEM Architect",
+        "imageAlt": "Andrés Elías Vargas profile picture",
+        "imageTitle": "Andrés Elías Vargas - AEM Architect at Kaiser Permanente"
+      },
+      "andrea": {
+        "testimonial": "His ability to balance multiple projects and prioritize tasks effectively has been instrumental in the successful execution of the digital initiatives at our company.",
+        "designation": "Senior Digital Project Manager",
+        "imageAlt": "Andrea Benavides profile picture",
+        "imageTitle": "Andrea Benavides - Senior Digital Project Manager at Critical Mass Latam"
+      },
+      "brenes": {
+        "testimonial": "Carlos is exceptional. He is always willing to help with any technical questions, whether they relate to backend or frontend development.",
+        "designation": "Full Stack Developer",
+        "imageAlt": "Luis Brenes profile picture",
+        "imageTitle": "Luis Brenes - Full Stack Developer at Factor K Software"
+      },
+      "adrian": {
+        "testimonial": "Carlos's proactive approach and ability to think critically make him an asset to any technology-focused role.",
+        "designation": "AEM Content Author Lead",
+        "imageAlt": "Adrian Carmiol profile picture",
+        "imageTitle": "Adrian Carmiol - AEM Content Author Lead at Critical Mass Latam"
+      },
+      "floriana": {
+        "testimonial": "Carlos exhibits a strong sense of ownership, consistently delivering his work with precision and completeness.",
+        "designation": "Project Manager",
+        "imageAlt": "Floriana Fonseca profile picture",
+        "imageTitle": "Floriana Fonseca - Project Manager at Critical Mass Latam"
+      },
+      "paolo": {
+        "testimonial": "Carlos is a quick learner and has a great attitude. He is always willing to help with any technical questions, whether they relate to backend or frontend development.",
+        "designation": "Senior Content Author Lead",
+        "imageAlt": "Paolo Vargas profile picture",
+        "imageTitle": "Paolo Vargas - Senior Content Author Lead at Critical Mass Latam"
+      }
+    }
+  },
+  "contact": {
+    "titleDescription": "Get in touch",
+    "title": "Contact.",
+    "ariaLabelSection": "Contact section",
+    "ariaLabelEarth": "3D Earth visualization",
+    "form": {
+      "ariaLabelForm": "Contact form",
+      "yourName": "Your Name",
+      "yourEmail": "Your Email",
+      "yourMessage": "Your Message",
+      "placeholderName": "What's your name?",
+      "placeholderEmail": "What's your email?",
+      "placeholderMessage": "What do you want to say?",
+      "send": "Send",
+      "sending": "Sending...",
+      "successMessage": "Thank you for contacting me! I will get back to you soon.",
+      "errorMessage": "Something went wrong.",
+      "titleContactForm": "Portfolio Contact Form"
+    }
+  }
+}

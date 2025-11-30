@@ -1,0 +1,95 @@
+# Carlos Garita Campos - Full Stack Developer Portfolio
+
+> Full-stack engineer with a robust foundation in computer science, specializing in architecting and delivering comprehensive software solutions. Expert in developing responsive user interfaces, designing robust back-end services, managing databases, and deploying applications in cloud environments.
+
+## About
+
+- **Name**: Carlos Garita Campos
+- **Role**: Full Stack Developer
+- **Location**: Costa Rica
+- **Website**: https://cgarita.web.app
+- **Email**: cgaritac@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/carlos-garita-campos-44881a111
+- **GitHub**: https://github.com/cgaritac
+
+## Technical Skills
+
+### Frontend
+- React JS, Angular, TypeScript, JavaScript
+- HTML5, CSS3, Tailwind CSS
+- Storybook, Single-SPA (Microfrontends)
+- Feature-Sliced Design (FSD) Architecture
+
+### Backend
+- C#, .NET, Python, Java
+- Node.js, Docker
+
+### Databases
+- SQL Server, MySQL
+
+### Cloud & DevOps
+- Microsoft Azure, Azure AD (Microsoft Entra ID)
+- CI/CD Pipelines, Git
+
+## Work Experience
+
+### Factor K (July 2024 – Present)
+- Develop and maintain web applications following SCRUM methodology
+- Implement front-end solutions using JavaScript, Angular, and React with FSD architecture
+- Build and integrate microfrontend architectures using single-spa
+- Integrate authentication systems with Microsoft Entra ID and Clerk
+- Develop back-end services with C#, .NET, and Docker
+- Configure and maintain CI/CD pipelines in Microsoft Azure
+- Design and update MySQL databases
+- Analyze Pull Requests as Developer Lead
+
+### Critical Mass (July 2023 – October 2023)
+- Executed authoring tasks in Adobe Experience Manager (AEM)
+- Customized AEM components using HTML, CSS, and JavaScript
+- Conducted content validation, functional testing, and accessibility checks
+
+### Sibu Digital (April 2023 – June 2023)
+- Performed AEM authoring activities
+- Managed digital assets within AEM DAM
+- Collaborated with designers and developers on responsive design
+
+## Featured Projects
+
+### UI Component Library
+A collection of reusable UI components for web applications built with React and CSS, using Storybook for documentation and testing.
+- **Technologies**: React, Storybook, CSS
+- **Repository**: https://github.com/cgaritac/ui_library
+
+### Expropriation Management System
+A web application that enables users to manage the expropriation process.
+- **Technologies**: C#, .NET, Blazor, SQL Server
+- **Repository**: https://github.com/cgaritac/expropriation_management_system
+
+### Performance Evaluation System (Full Stack)
+A web application that enables companies to manage the performance evaluation process.
+- **Frontend**: React, Tailwind CSS - https://github.com/cgaritac/performance_evaluation_system_FE
+- **Backend**: C#, .NET, MySQL - https://github.com/cgaritac/performance_evaluation_system_BE
+
+### Helicopter Game
+A game where a vessel tries to avoid crashing into obstacles.
+- **Technologies**: Python, Pygame
+- **Repository**: https://github.com/cgaritac/helicopter_game
+
+### Airplane Passengers
+A project that simulates the registration of passengers for an airline.
+- **Technologies**: Java, Swing
+- **Repository**: https://github.com/cgaritac/airplane_passengers
+
+## Services Offered
+
+- Frontend Development
+- Backend Development
+- Software Engineering
+- Database Administration
+
+## Contact
+
+For collaborations, job opportunities, or questions, please reach out via:
+- **Email**: cgaritac@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/carlos-garita-campos-44881a111
+- **Website Contact Form**: https://cgarita.web.app/#contact

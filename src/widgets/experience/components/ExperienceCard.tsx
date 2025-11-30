@@ -1,10 +1,18 @@
 import { FC } from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
-import { EXPERIENCES } from "../content";
+
+interface Experience {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+}
 
 interface ExperienceCardProps {
-  experience: (typeof EXPERIENCES)[number];
+  experience: Experience;
 }
 
 export const ExperienceCard: FC<ExperienceCardProps> = ({ experience }: ExperienceCardProps) => {

@@ -3,3 +3,4 @@ export * from './carousel';
 export * from './HOC';
 export * from './format';
 export * from './forms';
+export * from './languageToggle';

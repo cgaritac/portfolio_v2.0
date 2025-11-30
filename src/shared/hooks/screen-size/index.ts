@@ -1,0 +1,1 @@
+export { useSmallSize } from './useSmallSize.Hooks';

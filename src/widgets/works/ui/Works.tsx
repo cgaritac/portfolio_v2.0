@@ -2,17 +2,20 @@ import { Carousel, HOC, ParagraphSplitter } from "@/features";
 import { fadeIn, SectionTitle } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 import { ProjectCard } from "../components";
-import { WORKS_CONSTANTS } from "../constants";
-import { PROJECTS } from "../content";
+import { useProjects } from "../hooks";
 
 const Works: FC = () => {
+  const { t } = useTranslation();
+  const projects = useProjects();
+
   return (
     <section aria-labelledby="works-title">
       <header>
         <SectionTitle
-          titleDescription={WORKS_CONSTANTS.TitleDescription}
-          title={WORKS_CONSTANTS.Title}
+          titleDescription={t("works.titleDescription")}
+          title={t("works.title")}
         />
       </header>
 
@@ -26,21 +29,21 @@ const Works: FC = () => {
           })}
           className="mt-3 text-secondary text-[17px] max-w-5xl leading-[30px] space-y-4"
         >
-          <ParagraphSplitter text={WORKS_CONSTANTS.Description} />
+          <ParagraphSplitter text={t("works.description")} />
         </motion.div>
       </div>
 
       <div
         className="w-full flex flex-wrap justify-center gap-7 mt-14"
         role="list"
-        aria-label="Portfolio projects"
+        aria-label={t("works.ariaLabelProjects")}
       >
         <Carousel
           scrollAmount={350}
-          ariaLabelPrev="Previous projects"
-          ariaLabelNext="Next projects"
+          ariaLabelPrev={t("feedback.ariaLabelPrev")}
+          ariaLabelNext={t("feedback.ariaLabelNext")}
         >
-          {PROJECTS.map((project, index) => (
+          {projects.map((project, index) => (
             <article
               key={`project-${index}`}
               role="listitem"
@@ -53,6 +56,7 @@ const Works: FC = () => {
                 name={project.name}
                 description={project.description}
                 tags={project.tags}
+                image={project.image}
                 source_code_link={project.source_code_link}
               />
             </article>

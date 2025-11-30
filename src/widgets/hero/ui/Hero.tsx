@@ -1,12 +1,14 @@
 import { ComputersCanvas } from "@/features";
-import { styles } from "@/shared";
+import { styles, logButtonClick } from "@/shared";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { HERO_CONSTANTS } from "../constants";
+import { useTranslation } from "react-i18next";
 
 export const Hero: FC = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="relative w-full h-screen mx-auto" aria-label="Hero section">
+    <section className="relative w-full h-screen mx-auto" aria-label={t("hero.ariaLabelSection")}>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5" aria-hidden="true">
           <div className="w-5 h-5 rounded-full bg-green-100" />
@@ -14,16 +16,16 @@ export const Hero: FC = () => {
         </div>
         <header>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {HERO_CONSTANTS.title}
+            {t("hero.title")}
             &nbsp;
             <span className="text-green-100">
-              {HERO_CONSTANTS.name}
+              {t("hero.name")}
             </span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
-            {HERO_CONSTANTS.subtitle}
+            {t("hero.subtitle")}
             <br className="sm:block hidden" />
-            {HERO_CONSTANTS.subtitle2}
+            {t("hero.subtitle2")}
           </p>
         </header>
       </div>
@@ -33,10 +35,11 @@ export const Hero: FC = () => {
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a 
           href="#about" 
-          aria-label="Scroll to about section"
-          title="Scroll to about section"
+          aria-label={t("hero.scrollToAbout")}
+          title={t("hero.scrollToAbout")}
+          onClick={() => logButtonClick('hero_scroll_to_about')}
         >
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2" role="img" aria-label="Scroll indicator">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2" role="img" aria-label={t("hero.ariaLabelScrollIndicator")}>
             <motion.div
               animate={{
                 y: [0, 24, 0]

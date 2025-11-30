@@ -1,9 +1,11 @@
 import emailjs from '@emailjs/browser'
+import { logButtonClick } from '@/shared/analytics/analytics'
 import { FC, useRef, useState } from "react"
+import { useTranslation } from "react-i18next"
 import { toast } from 'sonner'
-import { CONTACT_FORM_CONSTANTS } from "../constants"
 
 export const ContactForm: FC = () => {
+  const { t } = useTranslation();
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -21,12 +23,13 @@ export const ContactForm: FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
+    logButtonClick('contact_form_submit')
 
     emailjs.send(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       {
-        title: CONTACT_FORM_CONSTANTS.TITLE_CONTACT_FORM,
+        title: t("contact.form.titleContactForm"),
         name: form.name,
         to_name: import.meta.env.VITE_EMAILJS_TO_NAME,
         email: form.email,
@@ -38,12 +41,12 @@ export const ContactForm: FC = () => {
     )
     .then(() => {
       setLoading(false)
-      toast.success(CONTACT_FORM_CONSTANTS.SUCCESS_MESSAGE)
+      toast.success(t("contact.form.successMessage"))
 
       setForm({ name: '', email: '', message: '' })
     }, (error) => {
       setLoading(false)
-      toast.error(CONTACT_FORM_CONSTANTS.ERROR_MESSAGE)
+      toast.error(t("contact.form.errorMessage"))
       console.error(error)
     })
   }
@@ -53,42 +56,42 @@ export const ContactForm: FC = () => {
         ref={formRef} 
         onSubmit={handleSubmit} 
         className="mt-12 flex flex-col gap-8"
-        aria-label="Contact form"
+        aria-label={t("contact.form.ariaLabelForm")}
     >
         <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_NAME}</span>
+          <span className="text-white font-medium mb-4">{t("contact.form.yourName")}</span>
           <input 
             type="text" 
             name="name" 
             value={form.name} 
             onChange={handleChange} 
-            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_NAME}
+            placeholder={t("contact.form.placeholderName")}
             required
             aria-required="true"
             className="bg-green-100/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
           />
         </label>
         <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_EMAIL}</span>
+          <span className="text-white font-medium mb-4">{t("contact.form.yourEmail")}</span>
           <input 
             type="email" 
             name="email" 
             value={form.email} 
             onChange={handleChange} 
-            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_EMAIL}
+            placeholder={t("contact.form.placeholderEmail")}
             required
             aria-required="true"
             className="bg-green-100/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" 
           />
         </label>
         <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">{CONTACT_FORM_CONSTANTS.YOUR_MESSAGE}</span>
+          <span className="text-white font-medium mb-4">{t("contact.form.yourMessage")}</span>
           <textarea 
             rows={7}
             name="message" 
             value={form.message} 
             onChange={(e) => setForm({ ...form, message: e.target.value })} 
-            placeholder={CONTACT_FORM_CONSTANTS.PLACEHOLDER_MESSAGE}
+            placeholder={t("contact.form.placeholderMessage")}
             required
             aria-required="true"
             className="bg-green-100/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none" 
@@ -103,7 +106,7 @@ export const ContactForm: FC = () => {
             className="bg-green-200/40 py-3 px-8 outline-none w-fit text-white font-bold shadow-sm shadow-green-200/40 rounded-xl cursor-pointer 
                     disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 ease-in-out hover:bg-green-200/60 hover:shadow-sm hover:shadow-green-200/60"
           >
-            {loading ? CONTACT_FORM_CONSTANTS.SENDING : CONTACT_FORM_CONSTANTS.SEND}
+            {loading ? t("contact.form.sending") : t("contact.form.send")}
           </button>
         </div>
     </form>

@@ -58,7 +58,8 @@ export const Menu: FC<MenuProps> = ({
     return (
       <nav
         id="mobile-menu"
-        className="p-6 black-gradient absolute top-16 right-0 mx-4 my-2 min-w-[135px] z-10 rounded-xl"
+        className="p-6 bg-primary/85 backdrop-blur-sm border-b border-white/30 shadow-lg absolute top-16 right-0 mx-4 my-2 
+                  min-w-[135px] z-10 rounded-xl"
         aria-label={t("navbar.ariaLabelMobile")}
       >
         {menuContent}

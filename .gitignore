@@ -54,4 +54,6 @@ coverage/
 *.tsbuildinfo
 .cache/
 documentation.txt
-da
+
+# Cursor temp files
+assets/

@@ -1,5 +1,43 @@
-# Bots
+# Carlos Garita Campos - Full Stack Developer Portfolio
+# Website: https://cgarita.web.app
+# Contact: cgaritac@gmail.com
+
+# Allow all search engine crawlers
 User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
 Allow: /
 
 # OpenAI / ChatGPT
@@ -32,7 +70,23 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+# Meta / Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap location
 Sitemap: https://cgarita.web.app/sitemap.xml
 
-# LLMs.txt for AI assistants
+# LLMs.txt for AI assistants - human-readable info about this site
 # https://cgarita.web.app/llms.txt
+
+# Host
+Host: https://cgarita.web.app

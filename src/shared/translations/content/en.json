@@ -114,6 +114,14 @@
       }
     }
   },
+  "footer": {
+    "ariaLabelNav": "Footer navigation",
+    "ariaLabelSocials": "Social media links",
+    "ariaLabelLinkedIn": "Visit my LinkedIn profile",
+    "ariaLabelGitHub": "Visit my GitHub profile",
+    "ariaLabelEmail": "Send me an email",
+    "copyright": "All rights reserved."
+  },
   "hero": {
     "title": "Hi, I'm",
     "name": "Carlos",
@@ -121,7 +129,12 @@
     "subtitle2": "and web applications",
     "scrollToAbout": "Scroll to about section",
     "ariaLabelSection": "Hero section",
-    "ariaLabelScrollIndicator": "Scroll indicator"
+    "ariaLabelScrollIndicator": "Scroll indicator",
+    "ariaLabelSocials": "Social media links",
+    "ariaLabelLinkedIn": "Visit my LinkedIn profile",
+    "ariaLabelGitHub": "Visit my GitHub profile",
+    "ariaLabelYouTube": "Visit my YouTube channel",
+    "ariaLabelEmail": "Send me an email"
   },
   "languageToggle": {
     "ariaLabelChangeLanguage": "Change language",

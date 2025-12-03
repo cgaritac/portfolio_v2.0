@@ -28,7 +28,7 @@ const About: FC = () => {
 
       <div className="mt-20 flex justify-center flex-wrap gap-10" role="list" aria-label={t("about.ariaLabelServices")}>
         {services.map((service, index) => (
-          <article key={service.id} role="listitem" itemScope itemType="https://schema.org/Service">
+          <article key={service.id} role="listitem" itemScope itemType="https://schema.org/Service" className="xs:w-auto w-full">
             <ServiceCard index={index} title={service.title} icon={service.icon} />
           </article>
         ))}

@@ -1,12 +1,18 @@
 # Carlos Garita Campos - Full Stack Developer Portfolio
 
-> Full-stack engineer with a robust foundation in computer science, specializing in architecting and delivering comprehensive software solutions. Expert in developing responsive user interfaces, designing robust back-end services, managing databases, and deploying applications in cloud environments.
+> Full-stack engineer with 3+ years of experience, specializing in architecting and delivering comprehensive software solutions. Expert in developing responsive user interfaces with React and Angular, designing robust back-end services with .NET and Python, managing SQL databases, and deploying applications in Microsoft Azure cloud environments.
 
-## About
+## Quick Summary
 
 - **Name**: Carlos Garita Campos
 - **Role**: Full Stack Developer
-- **Location**: Costa Rica
+- **Experience**: 2+ years in software development
+- **Location**: Available for remote work worldwide
+- **Specialization**: Enterprise web applications, Microfrontends, Cloud solutions
+- **Languages**: Spanish (Native), English (Professional)
+
+## Contact Information
+
 - **Website**: https://cgarita.web.app
 - **Email**: cgaritac@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/carlos-garita-campos-44881a111
@@ -14,82 +20,125 @@
 
 ## Technical Skills
 
-### Frontend
-- React JS, Angular, TypeScript, JavaScript
-- HTML5, CSS3, Tailwind CSS
-- Storybook, Single-SPA (Microfrontends)
-- Feature-Sliced Design (FSD) Architecture
+### Frontend Development
+- **Frameworks/Libraries**: React JS, Angular, TypeScript, JavaScript ES6+
+- **Styling**: HTML5, CSS3, Tailwind CSS, Responsive Design
+- **Architecture**: Feature-Sliced Design (FSD), Single-SPA (Microfrontends)
+- **Tools**: Storybook, Vite, Webpack
 
-### Backend
-- C#, .NET, Python, Java
-- Node.js, Docker
+### Backend Development
+- **Languages**: C#, Python, Java, Node.js
+- **Frameworks**: .NET Core, .NET Framework, ASP.NET
+- **Containerization**: Docker
 
 ### Databases
-- SQL Server, MySQL
+- **Relational**: SQL Server, MySQL, PostgreSQL
+- **Query Languages**: T-SQL, MySQL
 
 ### Cloud & DevOps
-- Microsoft Azure, Azure AD (Microsoft Entra ID)
-- CI/CD Pipelines, Git
+- **Cloud Platforms**: Microsoft Azure, Firebase
+- **Authentication**: Microsoft Entra ID (Azure AD), Clerk
+- **CI/CD**: Azure DevOps Pipelines, GitHub Actions
+- **Version Control**: Git, GitHub, Azure Repos
 
-## Work Experience
+## Professional Experience
 
-### Factor K (July 2024 – Present)
-- Develop and maintain web applications following SCRUM methodology
-- Implement front-end solutions using JavaScript, Angular, and React with FSD architecture
-- Build and integrate microfrontend architectures using single-spa
-- Integrate authentication systems with Microsoft Entra ID and Clerk
-- Develop back-end services with C#, .NET, and Docker
+### Factor K Software - Full Stack Developer & Developer Lead (July 2024 – Present)
+**Key Responsibilities:**
+- Lead development team and analyze Pull Requests ensuring code quality and best practices
+- Architect and implement microfrontend solutions using single-spa framework
+- Develop enterprise web applications using React with Feature-Sliced Design architecture
+- Build robust backend services with C#, .NET Core, and Docker
 - Configure and maintain CI/CD pipelines in Microsoft Azure
-- Design and update MySQL databases
-- Analyze Pull Requests as Developer Lead
+- Design and optimize MySQL databases for high-performance applications
+- Integrate enterprise authentication with Microsoft Entra ID and Clerk
 
-### Critical Mass (July 2023 – October 2023)
-- Executed authoring tasks in Adobe Experience Manager (AEM)
-- Customized AEM components using HTML, CSS, and JavaScript
-- Conducted content validation, functional testing, and accessibility checks
+**Technologies Used:** React, Angular, TypeScript, C#, .NET, Docker, MySQL, Azure, single-spa, FSD
 
-### Sibu Digital (April 2023 – June 2023)
-- Performed AEM authoring activities
-- Managed digital assets within AEM DAM
-- Collaborated with designers and developers on responsive design
+### Critical Mass Latam - AEM Developer (July 2023 – October 2023)
+**Key Responsibilities:**
+- Developed and customized Adobe Experience Manager components using HTML, CSS, and JavaScript
+- Collaborated with Creative, Business, Technology, and QA teams
+- Conducted content validation, functional testing, and accessibility compliance checks
+
+**Technologies Used:** Adobe Experience Manager (AEM), HTML, CSS, JavaScript
+
+### Sibu Digital - Content Author (April 2023 – June 2023)
+**Key Responsibilities:**
+- Performed AEM authoring activities and content management
+- Managed digital assets within AEM DAM ensuring brand consistency
+- Collaborated with designers on responsive design implementation
+
+**Technologies Used:** Adobe Experience Manager (AEM), Digital Asset Management
 
 ## Featured Projects
 
-### UI Component Library
-A collection of reusable UI components for web applications built with React and CSS, using Storybook for documentation and testing.
-- **Technologies**: React, Storybook, CSS
+### 1. UI Component Library
+A production-ready collection of reusable UI components for enterprise web applications.
+- **Description**: Modular component library with comprehensive documentation and visual testing
+- **Technologies**: React, Storybook, CSS, TypeScript
 - **Repository**: https://github.com/cgaritac/ui_library
+- **Key Features**: Reusable components, Visual testing, Documentation
 
-### Expropriation Management System
-A web application that enables users to manage the expropriation process.
-- **Technologies**: C#, .NET, Blazor, SQL Server
+### 2. Expropriation Management System
+Enterprise web application for government expropriation process management.
+- **Description**: Full-stack solution for managing complex legal and administrative workflows
+- **Technologies**: C#, .NET Core, Blazor, SQL Server
 - **Repository**: https://github.com/cgaritac/expropriation_management_system
+- **Key Features**: CRUD operations, Document management, User roles
 
-### Performance Evaluation System (Full Stack)
-A web application that enables companies to manage the performance evaluation process.
-- **Frontend**: React, Tailwind CSS - https://github.com/cgaritac/performance_evaluation_system_FE
-- **Backend**: C#, .NET, MySQL - https://github.com/cgaritac/performance_evaluation_system_BE
+### 3. Performance Evaluation System (Full Stack)
+Complete enterprise solution for company performance evaluation management.
+- **Frontend Repository**: https://github.com/cgaritac/performance_evaluation_system_FE
+- **Backend Repository**: https://github.com/cgaritac/performance_evaluation_system_BE
+- **Technologies**: React, Tailwind CSS (Frontend) | C#, .NET, MySQL (Backend)
+- **Key Features**: Employee evaluations, Reporting, Data analytics
 
-### Helicopter Game
-A game where a vessel tries to avoid crashing into obstacles.
+### 4. Helicopter Game
+Interactive browser game demonstrating Python programming skills.
+- **Description**: Obstacle avoidance game with physics-based mechanics
 - **Technologies**: Python, Pygame
 - **Repository**: https://github.com/cgaritac/helicopter_game
 
-### Airplane Passengers
-A project that simulates the registration of passengers for an airline.
+### 5. Airplane Passengers System
+Desktop application simulating airline passenger registration.
+- **Description**: Object-oriented programming demonstration
 - **Technologies**: Java, Swing
 - **Repository**: https://github.com/cgaritac/airplane_passengers
 
 ## Services Offered
 
-- Frontend Development
-- Backend Development
-- Software Engineering
-- Database Administration
+1. **Frontend Development**: Modern, responsive web applications using React, Angular, and TypeScript
+2. **Backend Development**: Scalable APIs and services with .NET, Python, and Node.js
+3. **Full Stack Solutions**: End-to-end application development from design to deployment
+4. **Database Design**: SQL database architecture, optimization, and administration
+5. **Cloud Deployment**: Azure and Firebase deployment, CI/CD pipeline configuration
+6. **Code Review & Consulting**: Architecture review, best practices implementation
 
-## Contact
+## Why Work With Me?
 
-For collaborations, job opportunities, or questions, please reach out via:
-- **Email**: cgaritac@gmail.com
+- ✅ 2+ years of professional experience in enterprise software development
+- ✅ Strong background in modern frontend and backend technologies
+- ✅ Experience leading development teams and mentoring junior developers
+- ✅ Fluent in English and Spanish for international collaboration
+- ✅ Available for remote work across all time zones
+- ✅ Passionate about clean code, testing, and continuous learning
+
+## Availability
+
+- **Status**: Currently employed, open to freelance projects and new opportunities
+- **Work Type**: Remote or Hybrid
+- **Response Time**: Usually within 24-48 hours
+
+## Contact Me
+
+Ready to discuss your project? Reach out through any of these channels:
+
+- **Email**: cgaritac@gmail.com (Preferred for initial contact)
 - **LinkedIn**: https://www.linkedin.com/in/carlos-garita-campos-44881a111
 - **Website Contact Form**: https://cgarita.web.app/#contact
+
+---
+
+*Last updated: December 2025*
+*Portfolio Version: 2.0*

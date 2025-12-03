@@ -1,77 +1,75 @@
-// import { NAVBAR_CONSTANTS } from "@/widgets/navbar/constants";
-// import { NAV_LINKS } from "@/widgets/navbar/links";
+import { styles, OWNER } from "@/shared";
 import { FC } from "react";
-// import { logo } from "@/widgets/navbar/assets";
-
-// const SOCIAL_LINKS = [
-//   {
-//     name: "LinkedIn",
-//     url: "https://www.linkedin.com/in/carlos-garita-campos-44881a111",
-//     icon: (
-//       <svg
-//         className="w-6 h-6"
-//         fill="currentColor"
-//         viewBox="0 0 24 24"
-//         aria-hidden="true"
-//       >
-//         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-//       </svg>
-//     ),
-//   },
-//   {
-//     name: "Email",
-//     url: "mailto:cgaritac@gmail.com",
-//     icon: (
-//       <svg
-//         className="w-6 h-6"
-//         fill="none"
-//         stroke="currentColor"
-//         viewBox="0 0 24 24"
-//         aria-hidden="true"
-//       >
-//         <path
-//           strokeLinecap="round"
-//           strokeLinejoin="round"
-//           strokeWidth={2}
-//           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-//         />
-//       </svg>
-//     ),
-//   },
-// ];
+import { useTranslation } from "react-i18next";
+import { SOCIAL_LINKS } from "./content";
 
 export const FooterComponent: FC = () => {
-  // const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-black-200 border-t border-tertiary">
-      {/* <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <img src={logo} alt={NAVBAR_CONSTANTS.logo.imageAlt} className="w-12 h-12 sm:w-26 sm:h-26 object-contain shrink-0" />
+    <footer 
+      className={`${styles.paddingX} w-full py-6 bg-primary/5 backdrop-blur-sm border-t border-white/10 shadow-lg`}
+      itemScope 
+      itemType="https://schema.org/WPFooter"
+    >
+      <div className="w-full max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Brand info */}
+          <div 
+            className="flex flex-col items-center md:items-start gap-1"
+            itemScope 
+            itemType="https://schema.org/Person"
+          >
+            <span className="text-white font-bold text-lg" itemProp="name">
+              {OWNER.fullName}
+            </span>
+            <span className="text-secondary text-sm" itemProp="jobTitle">
+              {t("navbar.jobTitle")}
+            </span>
+            <meta itemProp="url" content={OWNER.website} />
           </div>
 
-          <nav className="flex flex-wrap justify-center gap-6 md:gap-8">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.id}
-                href={`#${link.id}`}
-                className="text-secondary hover:text-white text-sm font-medium transition-colors duration-200"
-              >
-                {link.title}
-              </a>
-            ))}
+          {/* Navigation links */}
+          <nav className="flex flex-wrap justify-center gap-6 md:gap-8" aria-label={t("footer.ariaLabelNav")}>
+            <a
+              href="#about"
+              className="text-white-100 hover:text-green-200 text-[18px] font-medium transition-colors duration-200"
+            >
+              {t("navLinks.about")}
+            </a>
+            <a
+              href="#work"
+              className="text-white-100 hover:text-green-200 text-[18px] font-medium transition-colors duration-200"
+            >
+              {t("navLinks.work")}
+            </a>
+            <a
+              href="#works"
+              className="text-white-100 hover:text-green-200 text-[18px] font-medium transition-colors duration-200"
+            >
+              {t("works.title").replace(".", "")}
+            </a>
+            <a
+              href="#contact"
+              className="text-white-100 hover:text-green-200 text-[18px] font-medium transition-colors duration-200"
+            >
+              {t("navLinks.contact")}
+            </a>
           </nav>
 
-          <div className="flex gap-4">
+          {/* Social links */}
+          <div className="flex gap-5" role="list" aria-label={t("footer.ariaLabelSocials")}>
             {SOCIAL_LINKS.map((social) => (
               <a
                 key={social.name}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary hover:text-purple transition-colors duration-200"
-                aria-label={social.name}
+                className="text-white-100 hover:text-green-200 transition-colors duration-200"
+                aria-label={social.ariaLabel}
+                title={social.name}
+                role="listitem"
               >
                 {social.icon}
               </a>
@@ -79,12 +77,13 @@ export const FooterComponent: FC = () => {
           </div>
         </div>
 
-        <div className="mt-4 pt-4 border-t border-tertiary">
+        {/* Copyright */}
+        <div className="mt-6 pt-4 border-t border-white/10">
           <p className="text-secondary text-center text-sm">
-            © {currentYear} {NAVBAR_CONSTANTS.logo.Name} {NAVBAR_CONSTANTS.logo.LastName}. All rights reserved.
+            © {currentYear} {OWNER.fullName}. {t("footer.copyright")}
           </p>
         </div>
-      </div> */}
+      </div>
     </footer>
   );
 };

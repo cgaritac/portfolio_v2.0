@@ -1,17 +1,26 @@
 {
-  "name": "CGC Portfolio - Carlos Garita Campos",
+  "name": "Carlos Garita Campos - Full Stack Developer Portfolio",
   "short_name": "CGC Portfolio",
-  "description": "Portfolio of Carlos Garita Campos - Full Stack Developer specializing in React, TypeScript, .NET, Python, and modern web technologies.",
+  "description": "Portfolio of Carlos Garita Campos - Full Stack Developer specializing in React, TypeScript, .NET, Python, Angular and modern cloud technologies. Hire me for your next project.",
   "start_url": "/",
   "scope": "/",
+  "id": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#050A16",
+  "theme_color": "#050A16",
   "lang": "en",
   "dir": "ltr",
-  "categories": ["portfolio", "developer", "technology"],
+  "categories": ["portfolio", "developer", "technology", "business", "productivity"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
   "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
@@ -19,25 +28,55 @@
       "purpose": "maskable"
     },
     {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "screenshots": [],
   "shortcuts": [
     {
-      "name": "Contact",
-      "short_name": "Contact",
-      "description": "Get in touch with Carlos Garita Campos",
-      "url": "/#contact"
+      "name": "About Me",
+      "short_name": "About",
+      "description": "Learn about Carlos Garita Campos background and skills",
+      "url": "/#about",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Work Experience",
+      "short_name": "Experience",
+      "description": "View professional work experience",
+      "url": "/#work",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
     },
     {
       "name": "Projects",
       "short_name": "Projects",
-      "description": "View portfolio projects",
-      "url": "/#works"
+      "description": "View portfolio projects and code repositories",
+      "url": "/#works",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with Carlos Garita Campos",
+      "url": "/#contact",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
     }
-  ]
+  ],
+  "related_applications": [],
+  "handle_links": "preferred"
 }

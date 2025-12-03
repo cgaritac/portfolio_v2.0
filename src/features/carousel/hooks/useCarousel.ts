@@ -3,6 +3,7 @@ import { useRef, useState, useEffect, useCallback } from "react";
 interface UseCarouselOptions {
   scrollAmount?: number;
   scrollThreshold?: number;
+  dragThreshold?: number;
 }
 
 interface UseCarouselReturn {
@@ -20,13 +21,14 @@ interface UseCarouselReturn {
 }
 
 export const useCarousel = (options: UseCarouselOptions = {}): UseCarouselReturn => {
-  const { scrollAmount = 350, scrollThreshold = 5 } = options;
+  const { scrollAmount = 350, scrollThreshold = 5, dragThreshold = 5 } = options;
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
   const [isDragging, setIsDragging] = useState(false);
+  const [isMouseDown, setIsMouseDown] = useState(false);
   const [disableSnap, setDisableSnap] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeftStart, setScrollLeftStart] = useState(0);
@@ -76,36 +78,45 @@ export const useCarousel = (options: UseCarouselOptions = {}): UseCarouselReturn
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    setIsDragging(true);
-    setDisableSnap(true);
+    setIsMouseDown(true);
     setStartX(e.pageX);
     setScrollLeftStart(container.scrollLeft);
   }, []);
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent) => {
-      if (!isDragging) return;
+      if (!isMouseDown) return;
 
       const container = scrollContainerRef.current;
       if (!container) return;
 
-      e.preventDefault();
       const x = e.pageX;
       const walk = x - startX;
-      container.scrollLeft = scrollLeftStart - walk;
+
+      if (!isDragging && Math.abs(walk) > dragThreshold) {
+        setIsDragging(true);
+        setDisableSnap(true);
+      }
+
+      if (isDragging) {
+        e.preventDefault();
+        container.scrollLeft = scrollLeftStart - walk;
+      }
     },
-    [isDragging, startX, scrollLeftStart]
+    [isMouseDown, isDragging, startX, scrollLeftStart, dragThreshold]
   );
 
   const handleMouseUp = useCallback(() => {
+    setIsMouseDown(false);
     setIsDragging(false);
   }, []);
 
   const handleMouseLeave = useCallback(() => {
-    if (isDragging) {
+    if (isMouseDown) {
+      setIsMouseDown(false);
       setIsDragging(false);
     }
-  }, [isDragging]);
+  }, [isMouseDown]);
 
   return {
     scrollContainerRef,

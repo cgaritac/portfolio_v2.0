@@ -1,28 +1,4 @@
 {
-  "hero": {
-    "title": "Hi, I'm",
-    "name": "Carlos",
-    "subtitle": "I develop software solutions",
-    "subtitle2": "and web applications",
-    "scrollToAbout": "Scroll to about section",
-    "ariaLabelSection": "Hero section",
-    "ariaLabelScrollIndicator": "Scroll indicator"
-  },
-  "navbar": {
-    "name": "Carlos",
-    "lastName": "Garita",
-    "jobTitle": "Full-Stack Developer",
-    "logoAlt": "cgc-logo",
-    "menuAlt": "Open menu",
-    "closeAlt": "Close menu",
-    "ariaLabelMain": "Main navigation",
-    "ariaLabelMobile": "Mobile navigation menu"
-  },
-  "navLinks": {
-    "about": "About",
-    "work": "Work",
-    "contact": "Contact"
-  },
   "about": {
     "titleDescription": "Introduction",
     "title": "Overview.",
@@ -31,9 +7,29 @@
       "frontend": "Frontend Developer",
       "backend": "Backend Developer",
       "software": "Software Engineer",
-      "database": "Database Administrator"
+      "database": "Data Analyst"
     },
     "ariaLabelServices": "Services and expertise"
+  },
+  "contact": {
+    "titleDescription": "Get in touch",
+    "title": "Contact.",
+    "ariaLabelSection": "Contact section",
+    "ariaLabelEarth": "3D Earth visualization",
+    "form": {
+      "ariaLabelForm": "Contact form",
+      "yourName": "Your Name",
+      "yourEmail": "Your Email",
+      "yourMessage": "Your Message",
+      "placeholderName": "What's your name?",
+      "placeholderEmail": "What's your email?",
+      "placeholderMessage": "What do you want to say?",
+      "send": "Send",
+      "sending": "Sending...",
+      "successMessage": "Thank you for contacting me! I will get back to you soon.",
+      "errorMessage": "Something went wrong.",
+      "titleContactForm": "Portfolio Contact Form"
+    }
   },
   "experience": {
     "titleDescription": "What I have done so far",
@@ -71,47 +67,6 @@
         "Design and update MySQL databases, ensuring data integrity and efficient query performance.",
         "Analyze Pull Requests (PRs) to ensure code quality and compliance with best practices as a Developer Lead."
       ]
-    }
-  },
-  "languageToggle": {
-    "ariaLabelChangeLanguage": "Change language",
-    "changeLanguage": "Change language"
-  },
-  "tech": {
-    "titleDescription": "Technologies and skills",
-    "title": "Technical skills.",
-    "ariaLabelTechnologies": "Technologies and skills"
-  },
-  "works": {
-    "titleDescription": "What I have worked on",
-    "title": "Projects.",
-    "description": "The projects I have worked on are listed below. Feel free to check them out and give me your feedback.\nEach project is briefly described with links to code repositories. It reflects my ability to solve problems, work with different technologies, and manage projects effectively.",
-    "ariaLabelProjects": "Portfolio projects",
-    "projects": {
-      "uiLibrary": {
-        "name": "UI Component Library",
-        "description": "UI Component Library is a collection of reusable UI components that can be used to build web applications. It is built with React and CSS, using storybook for documentation and testing."
-      },
-      "expropriation": {
-        "name": "Expropriation Management System",
-        "description": "Expropriation Management System is a web application that enables users to manage the expropriation process. It is built with c# and .NET, using using blazor for the frontend and sql server for the database."
-      },
-      "paceFE": {
-        "name": "Performance Evaluation System Frontend",
-        "description": "Performance Evaluation System Frontend is a web application that enables a company to manage the performance evaluation process. It is built with React and tailwind css."
-      },
-      "paceBE": {
-        "name": "Performance Evaluation System Backend",
-        "description": "Performance Evaluation System Backend is a web application that enables a company to manage the performance evaluation process. It is built with c# and .NET, using mysql for the database."
-      },
-      "helicopter": {
-        "name": "Helicopter game",
-        "description": "Helicopter is a game about a vessel that tries not to crash into obstacles. It enables a user to control a helicopter and avoid obstacles. It is built with python and pygame."
-      },
-      "airplane": {
-        "name": "Airplane passengers",
-        "description": "Airplane passengers is a project that simulates the registration of passengers of an airline. It is built with java and swing."
-      }
     }
   },
   "feedback": {
@@ -159,24 +114,69 @@
       }
     }
   },
-  "contact": {
-    "titleDescription": "Get in touch",
-    "title": "Contact.",
-    "ariaLabelSection": "Contact section",
-    "ariaLabelEarth": "3D Earth visualization",
-    "form": {
-      "ariaLabelForm": "Contact form",
-      "yourName": "Your Name",
-      "yourEmail": "Your Email",
-      "yourMessage": "Your Message",
-      "placeholderName": "What's your name?",
-      "placeholderEmail": "What's your email?",
-      "placeholderMessage": "What do you want to say?",
-      "send": "Send",
-      "sending": "Sending...",
-      "successMessage": "Thank you for contacting me! I will get back to you soon.",
-      "errorMessage": "Something went wrong.",
-      "titleContactForm": "Portfolio Contact Form"
+  "hero": {
+    "title": "Hi, I'm",
+    "name": "Carlos",
+    "subtitle": "I develop software solutions",
+    "subtitle2": "and web applications",
+    "scrollToAbout": "Scroll to about section",
+    "ariaLabelSection": "Hero section",
+    "ariaLabelScrollIndicator": "Scroll indicator"
+  },
+  "languageToggle": {
+    "ariaLabelChangeLanguage": "Change language",
+    "changeLanguage": "Change language"
+  },
+  "navbar": {
+    "name": "Carlos",
+    "lastName": "Garita",
+    "jobTitle": "Full-Stack Developer",
+    "logoAlt": "cgc-logo",
+    "menuAlt": "Open menu",
+    "closeAlt": "Close menu",
+    "ariaLabelMain": "Main navigation",
+    "ariaLabelMobile": "Mobile navigation menu"
+  },
+  "navLinks": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "tech": {
+    "titleDescription": "Technologies and skills",
+    "title": "Technical skills.",
+    "ariaLabelTechnologies": "Technologies and skills"
+  },
+  "works": {
+    "titleDescription": "What I have worked on",
+    "title": "Projects.",
+    "description": "The projects I have worked on are listed below. Feel free to check them out and give me your feedback.\nEach project is briefly described with links to code repositories. It reflects my ability to solve problems, work with different technologies, and manage projects effectively.",
+    "ariaLabelProjects": "Portfolio projects",
+    "projects": {
+      "uiLibrary": {
+        "name": "UI Component Library",
+        "description": "UI Component Library is a collection of reusable UI components that can be used to build web applications. It is built with React and CSS, using storybook for documentation and testing."
+      },
+      "expropriation": {
+        "name": "Expropriation Management System",
+        "description": "Expropriation Management System is a web application that enables users to manage the expropriation process. It is built with c# and .NET, using using blazor for the frontend and sql server for the database."
+      },
+      "paceFE": {
+        "name": "Performance Evaluation System Frontend",
+        "description": "Performance Evaluation System Frontend is a web application that enables a company to manage the performance evaluation process. It is built with React and tailwind css."
+      },
+      "paceBE": {
+        "name": "Performance Evaluation System Backend",
+        "description": "Performance Evaluation System Backend is a web application that enables a company to manage the performance evaluation process. It is built with c# and .NET, using mysql for the database."
+      },
+      "helicopter": {
+        "name": "Helicopter game",
+        "description": "Helicopter is a game about a vessel that tries not to crash into obstacles. It enables a user to control a helicopter and avoid obstacles. It is built with python and pygame."
+      },
+      "airplane": {
+        "name": "Airplane passengers",
+        "description": "Airplane passengers is a project that simulates the registration of passengers of an airline. It is built with java and swing."
+      }
     }
   }
 }

@@ -1,28 +1,4 @@
 {
-  "hero": {
-    "title": "Hola, soy",
-    "name": "Carlos",
-    "subtitle": "Desarrollo soluciones de software",
-    "subtitle2": "y aplicaciones web",
-    "scrollToAbout": "Desplazarse a la sección sobre mí",
-    "ariaLabelSection": "Sección principal",
-    "ariaLabelScrollIndicator": "Indicador de desplazamiento"
-  },
-  "navbar": {
-    "name": "Carlos",
-    "lastName": "Garita",
-    "jobTitle": "Desarrollador Full-Stack",
-    "logoAlt": "cgc-logo",
-    "menuAlt": "Abrir menú",
-    "closeAlt": "Cerrar menú",
-    "ariaLabelMain": "Navegación principal",
-    "ariaLabelMobile": "Menú de navegación móvil"
-  },
-  "navLinks": {
-    "about": "Sobre mí",
-    "work": "Experiencia",
-    "contact": "Contacto"
-  },
   "about": {
     "titleDescription": "Introducción",
     "title": "Resumen.",
@@ -31,9 +7,29 @@
       "frontend": "Desarrollador Frontend",
       "backend": "Desarrollador Backend",
       "software": "Ingeniero de Software",
-      "database": "Administrador de Base de Datos"
+      "database": "Analista de Datos"
     },
     "ariaLabelServices": "Servicios y experiencia"
+  },
+  "contact": {
+    "titleDescription": "Ponte en contacto",
+    "title": "Contacto.",
+    "ariaLabelSection": "Sección de contacto",
+    "ariaLabelEarth": "Visualización 3D de la Tierra",
+    "form": {
+      "ariaLabelForm": "Formulario de contacto",
+      "yourName": "Tu Nombre",
+      "yourEmail": "Tu Correo",
+      "yourMessage": "Tu Mensaje",
+      "placeholderName": "¿Cuál es tu nombre?",
+      "placeholderEmail": "¿Cuál es tu correo?",
+      "placeholderMessage": "¿Qué quieres decir?",
+      "send": "Enviar",
+      "sending": "Enviando...",
+      "successMessage": "¡Gracias por contactarme! Te responderé pronto.",
+      "errorMessage": "Algo salió mal.",
+      "titleContactForm": "Formulario de Contacto del Portafolio"
+    }
   },
   "experience": {
     "titleDescription": "Lo que he hecho hasta ahora",
@@ -71,47 +67,6 @@
         "Diseño y actualizo bases de datos MySQL, asegurando la integridad de datos y rendimiento eficiente de consultas.",
         "Analizo Pull Requests (PRs) para asegurar la calidad del código y el cumplimiento de mejores prácticas como Developer Lead."
       ]
-    }
-  },
-  "languageToggle": {
-    "ariaLabelChangeLanguage": "Cambiar idioma",
-    "changeLanguage": "Cambiar idioma"
-  },
-  "tech": {
-    "titleDescription": "Tecnologías y habilidades",
-    "title": "Habilidades técnicas.",
-    "ariaLabelTechnologies": "Tecnologías y habilidades"
-  },
-  "works": {
-    "titleDescription": "En lo que he trabajado",
-    "title": "Proyectos.",
-    "description": "Los proyectos en los que he trabajado se listan a continuación. Siéntete libre de revisarlos y darme tu retroalimentación.\nCada proyecto está brevemente descrito con enlaces a repositorios de código. Refleja mi capacidad para resolver problemas, trabajar con diferentes tecnologías y gestionar proyectos efectivamente.",
-    "ariaLabelProjects": "Proyectos del portafolio",
-    "projects": {
-      "uiLibrary": {
-        "name": "Librería de Componentes UI",
-        "description": "Librería de Componentes UI es una colección de componentes UI reutilizables que pueden usarse para construir aplicaciones web. Está construida con React y CSS, usando storybook para documentación y pruebas."
-      },
-      "expropriation": {
-        "name": "Sistema de Gestión de Expropiaciones",
-        "description": "Sistema de Gestión de Expropiaciones es una aplicación web que permite a los usuarios gestionar el proceso de expropiación. Está construida con c# y .NET, usando blazor para el frontend y sql server para la base de datos."
-      },
-      "paceFE": {
-        "name": "Sistema de Evaluación de Desempeño Frontend",
-        "description": "Sistema de Evaluación de Desempeño Frontend es una aplicación web que permite a una empresa gestionar el proceso de evaluación de desempeño. Está construida con React y tailwind css."
-      },
-      "paceBE": {
-        "name": "Sistema de Evaluación de Desempeño Backend",
-        "description": "Sistema de Evaluación de Desempeño Backend es una aplicación web que permite a una empresa gestionar el proceso de evaluación de desempeño. Está construida con c# y .NET, usando mysql para la base de datos."
-      },
-      "helicopter": {
-        "name": "Juego de helicóptero",
-        "description": "Helicóptero es un juego sobre una nave que intenta no chocar contra obstáculos. Permite al usuario controlar un helicóptero y evitar obstáculos. Está construido con python y pygame."
-      },
-      "airplane": {
-        "name": "Pasajeros de avión",
-        "description": "Pasajeros de avión es un proyecto que simula el registro de pasajeros de una aerolínea. Está construido con java y swing."
-      }
     }
   },
   "feedback": {
@@ -159,24 +114,69 @@
       }
     }
   },
-  "contact": {
-    "titleDescription": "Ponte en contacto",
-    "title": "Contacto.",
-    "ariaLabelSection": "Sección de contacto",
-    "ariaLabelEarth": "Visualización 3D de la Tierra",
-    "form": {
-      "ariaLabelForm": "Formulario de contacto",
-      "yourName": "Tu Nombre",
-      "yourEmail": "Tu Correo",
-      "yourMessage": "Tu Mensaje",
-      "placeholderName": "¿Cuál es tu nombre?",
-      "placeholderEmail": "¿Cuál es tu correo?",
-      "placeholderMessage": "¿Qué quieres decir?",
-      "send": "Enviar",
-      "sending": "Enviando...",
-      "successMessage": "¡Gracias por contactarme! Te responderé pronto.",
-      "errorMessage": "Algo salió mal.",
-      "titleContactForm": "Formulario de Contacto del Portafolio"
+  "hero": {
+    "title": "Hola, soy",
+    "name": "Carlos",
+    "subtitle": "Desarrollo soluciones de software",
+    "subtitle2": "y aplicaciones web",
+    "scrollToAbout": "Desplazarse a la sección sobre mí",
+    "ariaLabelSection": "Sección principal",
+    "ariaLabelScrollIndicator": "Indicador de desplazamiento"
+  },
+  "languageToggle": {
+    "ariaLabelChangeLanguage": "Cambiar idioma",
+    "changeLanguage": "Cambiar idioma"
+  },
+  "navbar": {
+    "name": "Carlos",
+    "lastName": "Garita",
+    "jobTitle": "Desarrollador Full-Stack",
+    "logoAlt": "cgc-logo",
+    "menuAlt": "Abrir menú",
+    "closeAlt": "Cerrar menú",
+    "ariaLabelMain": "Navegación principal",
+    "ariaLabelMobile": "Menú de navegación móvil"
+  },
+  "navLinks": {
+    "about": "Sobre mí",
+    "work": "Experiencia",
+    "contact": "Contacto"
+  },
+  "tech": {
+    "titleDescription": "Tecnologías y habilidades",
+    "title": "Habilidades técnicas.",
+    "ariaLabelTechnologies": "Tecnologías y habilidades"
+  },
+  "works": {
+    "titleDescription": "En lo que he trabajado",
+    "title": "Proyectos.",
+    "description": "Los proyectos en los que he trabajado se listan a continuación. Siéntete libre de revisarlos y darme tu retroalimentación.\nCada proyecto está brevemente descrito con enlaces a repositorios de código. Refleja mi capacidad para resolver problemas, trabajar con diferentes tecnologías y gestionar proyectos efectivamente.",
+    "ariaLabelProjects": "Proyectos del portafolio",
+    "projects": {
+      "uiLibrary": {
+        "name": "Librería de Componentes UI",
+        "description": "Librería de Componentes UI es una colección de componentes UI reutilizables que pueden usarse para construir aplicaciones web. Está construida con React y CSS, usando storybook para documentación y pruebas."
+      },
+      "expropriation": {
+        "name": "Sistema de Gestión de Expropiaciones",
+        "description": "Sistema de Gestión de Expropiaciones es una aplicación web que permite a los usuarios gestionar el proceso de expropiación. Está construida con c# y .NET, usando blazor para el frontend y sql server para la base de datos."
+      },
+      "paceFE": {
+        "name": "Sistema de Evaluación de Desempeño Frontend",
+        "description": "Sistema de Evaluación de Desempeño Frontend es una aplicación web que permite a una empresa gestionar el proceso de evaluación de desempeño. Está construida con React y tailwind css."
+      },
+      "paceBE": {
+        "name": "Sistema de Evaluación de Desempeño Backend",
+        "description": "Sistema de Evaluación de Desempeño Backend es una aplicación web que permite a una empresa gestionar el proceso de evaluación de desempeño. Está construida con c# y .NET, usando mysql para la base de datos."
+      },
+      "helicopter": {
+        "name": "Juego de helicóptero",
+        "description": "Helicóptero es un juego sobre una nave que intenta no chocar contra obstáculos. Permite al usuario controlar un helicóptero y evitar obstáculos. Está construido con python y pygame."
+      },
+      "airplane": {
+        "name": "Pasajeros de avión",
+        "description": "Pasajeros de avión es un proyecto que simula el registro de pasajeros de una aerolínea. Está construido con java y swing."
+      }
     }
   }
 }

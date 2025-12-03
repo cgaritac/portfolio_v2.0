@@ -32,5 +32,5 @@ export const Hero: FC = () => {
 
       <ScrollButton />
     </section>
-  )
-}
+  );
+};

@@ -9,6 +9,7 @@ export const Socials = () => {
         rel="noopener noreferrer"
         aria-label="LinkedIn"
         title="LinkedIn"
+        className="hover:text-green-200 transition-colors duration-200"
       >
         <LinkedInIcon />
       </a>
@@ -18,6 +19,7 @@ export const Socials = () => {
         rel="noopener noreferrer"
         aria-label="GitHub"
         title="GitHub"
+        className="hover:text-green-200 transition-colors duration-200"
       >
         <GitHubIcon />
       </a>
@@ -27,6 +29,7 @@ export const Socials = () => {
         rel="noopener noreferrer"
         aria-label="YouTube"
         title="YouTube"
+        className="hover:text-green-200 transition-colors duration-200"
       >
         <YouTubeIcon />
       </a>
@@ -36,6 +39,7 @@ export const Socials = () => {
         rel="noopener noreferrer"
         aria-label="Email"
         title="Email"
+        className="hover:text-green-200 transition-colors duration-200"
       >
         <EmailIcon />
       </a>

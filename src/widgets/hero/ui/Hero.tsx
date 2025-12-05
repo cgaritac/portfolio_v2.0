@@ -21,7 +21,7 @@ export const Hero: FC = () => {
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
             {t("hero.subtitle")}
-            <br className="sm:block hidden" />
+            <br />
             {t("hero.subtitle2")}
           </p>
           <Socials />

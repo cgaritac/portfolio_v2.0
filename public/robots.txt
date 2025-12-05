@@ -82,5 +82,4 @@ User-agent: LinkedInBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://cgarita.web.app/sitemap_index.xml
 Sitemap: https://cgarita.web.app/sitemap.xml

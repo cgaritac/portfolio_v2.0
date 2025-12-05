@@ -5,7 +5,6 @@
 # Allow all search engine crawlers
 User-agent: *
 Allow: /
-Crawl-delay: 1
 
 # Google
 User-agent: Googlebot
@@ -84,9 +83,3 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://cgarita.web.app/sitemap.xml
-
-# LLMs.txt for AI assistants - human-readable info about this site
-# https://cgarita.web.app/llms.txt
-
-# Host
-Host: https://cgarita.web.app

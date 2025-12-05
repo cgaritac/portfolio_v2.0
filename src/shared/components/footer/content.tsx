@@ -1,12 +1,11 @@
 import { LinkedInIcon, GitHubIcon, EmailIcon } from "../../assets";
 import { OWNER } from "../../constants";
-import { t } from "i18next";
 
 export const SOCIAL_LINKS = [
     {
       name: "LinkedIn",
       url: OWNER.social.linkedIn,
-      ariaLabel: t("footer.ariaLabelLinkedIn"),
+      ariaLabelKey: "footer.ariaLabelLinkedIn",
       icon: (
         <LinkedInIcon />
       ),
@@ -14,7 +13,7 @@ export const SOCIAL_LINKS = [
     {
       name: "GitHub",
       url: OWNER.social.gitHub,
-      ariaLabel: t("footer.ariaLabelGitHub"),
+      ariaLabelKey: "footer.ariaLabelGitHub",
       icon: (
         <GitHubIcon />
       ),
@@ -22,7 +21,7 @@ export const SOCIAL_LINKS = [
     {
       name: "Email",
       url: `mailto:${OWNER.email}`,
-      ariaLabel: t("footer.ariaLabelEmail"),
+      ariaLabelKey: "footer.ariaLabelEmail",
       icon: (
         <EmailIcon />
       ),

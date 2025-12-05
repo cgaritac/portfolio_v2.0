@@ -67,7 +67,7 @@ export const FooterComponent: FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white-100 hover:text-green-200 transition-colors duration-200"
-                aria-label={social.ariaLabel}
+                aria-label={t(social.ariaLabelKey)}
                 title={social.name}
                 role="listitem"
               >

@@ -116,6 +116,10 @@ This structure keeps features independent, supports scalability, and enforces cl
 - Firebase project configured for Hosting
 - EmailJS account and template (for the contact form)
 
+### Browser config
+
+- The GPU acceleration needs to be activated to a correct render of 3D objects
+
 ### Installation
 
 ```bash

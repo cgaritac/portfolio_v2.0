@@ -20,20 +20,14 @@ export const FeedbackCard: FC<FeedbackCardProps> = ({ index, testimonial, name, 
       variants={fadeIn({ direction: "up", type: "spring", delay: index * 0.5, duration: 0.75 })}
       className="bg-green-100/15 backdrop-blur-md xs:p-10 p-4 rounded-3xl xs:w-[320px] w-[190px] min-h-[380px]"
     >
-      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Person" className="hidden">
-        <span itemProp="name">Carlos Garita Campos</span>
-        <span itemProp="jobTitle">Full Stack Developer</span>
-        <span itemProp="description">Full Stack Developer with expertise in React, TypeScript, .NET, Python, and modern cloud technologies</span>
-      </div>
-
       <blockquote className="mt-1">
         <p className="text-white font-black xs:text-[48px] text-[32px] leading-none" aria-hidden="true">"</p>
-        <p itemProp="reviewBody" className="text-white xs:text-[18px] text-[14px] tracking-wider xs:min-h-[230px] min-h-[210px]">{testimonial}</p>
+        <p className="text-white xs:text-[18px] text-[14px] tracking-wider xs:min-h-[230px] min-h-[210px]">{testimonial}</p>
         <footer className="xs:mt-7 mt-4 flex justify-between items-center gap-1">
           <div className="flex-1 flex flex-col">
-            <cite itemProp="author" itemScope itemType="https://schema.org/Person" className="text-white font-medium xs:text-[16px] text-[12px] not-italic">
+            <cite className="text-white font-medium xs:text-[16px] text-[12px] not-italic">
               <span className="blue-text-gradient">@</span>
-              <span itemProp="name">{name}</span>
+              {name}
             </cite>
             <p className="mt-1 text-secondary xs:text-[12px] text-[10px]">{designation} of {company}</p>
           </div>

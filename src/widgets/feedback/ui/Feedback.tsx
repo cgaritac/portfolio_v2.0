@@ -25,8 +25,6 @@ const Feedback: FC = () => {
             <article
               key={`testimonial-${index}`}
               role="listitem"
-              itemScope
-              itemType="https://schema.org/Review"
               className="snap-center shrink-0 first:ml-auto last:mr-auto"
             >
               <FeedbackCard

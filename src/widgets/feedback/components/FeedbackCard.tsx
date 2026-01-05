@@ -20,12 +20,10 @@ export const FeedbackCard: FC<FeedbackCardProps> = ({ index, testimonial, name, 
       variants={fadeIn({ direction: "up", type: "spring", delay: index * 0.5, duration: 0.75 })}
       className="bg-green-100/15 backdrop-blur-md xs:p-10 p-4 rounded-3xl xs:w-[320px] w-[190px] min-h-[380px]"
     >
-      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Service" className="hidden">
-        <span itemProp="name">Full Stack Development Services</span>
-        <span itemProp="description">Web development and software engineering services</span>
-        <span itemProp="provider" itemScope itemType="https://schema.org/Person">
-          <span itemProp="name">Carlos Garita Campos</span>
-        </span>
+      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Person" className="hidden">
+        <span itemProp="name">Carlos Garita Campos</span>
+        <span itemProp="jobTitle">Full Stack Developer</span>
+        <span itemProp="description">Full Stack Developer with expertise in React, TypeScript, .NET, Python, and modern cloud technologies</span>
       </div>
 
       <blockquote className="mt-1">

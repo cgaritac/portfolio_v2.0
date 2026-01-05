@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://cgarita.web.app/</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cgarita.web.app/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://cgarita.web.app/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cgarita.web.app/"/>
-  </url>
-  <url>
-    <loc>https://cgarita.web.app/?lang=es</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cgarita.web.app/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://cgarita.web.app/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cgarita.web.app/"/>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://cgarita.web.app/</loc>
+  <lastmod>2025-12-12T22:09:01+00:00</lastmod>
+</url>
+
+
 </urlset>

@@ -7,7 +7,7 @@ export const LanguageToggle: React.FC = () => {
   const currentLang = (i18n.language || '').toLowerCase();
   const isSpanish = currentLang.startsWith('es');
   const nextLang: 'en' | 'es' = isSpanish ? 'en' : 'es';
-  const nextFlag = isSpanish ? <EnglishFlagIcon size={25} /> : <SpanishFlagIcon size={25} />;
+  const nextFlag = isSpanish ? <SpanishFlagIcon size={25} /> : <EnglishFlagIcon size={25} />;
 
   const handleClick = () => {
     i18n.changeLanguage(nextLang);

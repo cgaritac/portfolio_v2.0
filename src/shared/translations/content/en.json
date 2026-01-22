@@ -166,6 +166,10 @@
     "description": "The projects I have worked on are listed below. Feel free to check them out and give me your feedback.\nEach project is briefly described with links to code repositories. It reflects my ability to solve problems, work with different technologies, and manage projects effectively.",
     "ariaLabelProjects": "Portfolio projects",
     "projects": {
+      "aiPrReviewer": {
+        "name": "AI PR Reviewer",
+        "description": "AI PR Reviewer is a tool that uses AI to review pull requests and provide feedback on the code. It is built with csharp and .NET, using openai for the AI model and git for the code repository."
+      },
       "uiLibrary": {
         "name": "UI Component Library",
         "description": "UI Component Library is a collection of reusable UI components that can be used to build web applications. It is built with React and CSS, using storybook for documentation and testing."

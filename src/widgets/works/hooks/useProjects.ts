@@ -1,6 +1,14 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { expropriation, helicopterGame, paceBE, paceFE, uiLibrary, airplanePassengers } from "../assets";
+import { 
+  expropriation,
+  helicopterGame,
+  paceBE,
+  paceFE,
+  uiLibrary,
+  airplanePassengers,
+  aiPrReviewer,
+} from "../assets";
 
 interface ProjectTag {
   name: string;
@@ -20,6 +28,18 @@ export const useProjects = (): Project[] => {
 
   return useMemo(() => [
     {
+      name: t("works.projects.aiPrReviewer.name"),
+      description: t("works.projects.aiPrReviewer.description"),
+      tags: [
+        { name: "csharp", color: "blue-text-gradient" },
+        { name: ".NET", color: "green-text-gradient" },
+        { name: "openai", color: "pink-text-gradient" },
+        { name: "git", color: "yellow-text-gradient" },
+      ],
+      image: aiPrReviewer,
+      source_code_link: "https://github.com/cgaritac/ai-pr-reviewer",
+    },
+    {
       name: t("works.projects.uiLibrary.name"),
       description: t("works.projects.uiLibrary.description"),
       tags: [
@@ -34,7 +54,7 @@ export const useProjects = (): Project[] => {
       name: t("works.projects.expropriation.name"),
       description: t("works.projects.expropriation.description"),
       tags: [
-        { name: "c#", color: "blue-text-gradient" },
+        { name: "csharp", color: "blue-text-gradient" },
         { name: ".NET", color: "green-text-gradient" },
         { name: "blazor", color: "pink-text-gradient" },
         { name: "sql server", color: "yellow-text-gradient" },

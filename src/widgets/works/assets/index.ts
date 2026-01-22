@@ -6,3 +6,4 @@ export { default as paceFE } from "./pace-fe.png";
 export { default as paceBE } from "./pace-be.png";
 export { default as helicopterGame } from "./helicopter.png";
 export { default as airplanePassengers } from "./airplane-passengers.png";
+export { default as aiPrReviewer } from "./ai-pr-reviewer.png";

@@ -166,6 +166,10 @@
     "description": "Los proyectos en los que he trabajado se listan a continuación. Siéntete libre de revisarlos y darme tu retroalimentación.\nCada proyecto está brevemente descrito con enlaces a repositorios de código. Refleja mi capacidad para resolver problemas, trabajar con diferentes tecnologías y gestionar proyectos efectivamente.",
     "ariaLabelProjects": "Proyectos del portafolio",
     "projects": {
+      "aiPrReviewer": {
+        "name": "Revisor de PRs con IA",
+        "description": "Revisor de PRs con IA es una herramienta que usa IA para revisar pull requests y proporcionar retroalimentación sobre el código. Está construido con csharp y .NET, usando openai para el modelo de IA y git para el repositorio de código."
+      },
       "uiLibrary": {
         "name": "Librería de Componentes UI",
         "description": "Librería de Componentes UI es una colección de componentes UI reutilizables que pueden usarse para construir aplicaciones web. Está construida con React y CSS, usando storybook para documentación y pruebas."

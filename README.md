@@ -217,10 +217,10 @@ To register the site in Google Search Console:
 
 If you have questions, suggestions, or would like to collaborate, feel free to reach out via the contact form on the site or connect through:
 
-- 🌐 Website: [https://cgarita.web.app](https://cgarita.web.app)
-- 📧 Email: [cgaritac@gmail.com](mailto:cgaritac@gmail.com)
-- 💼 LinkedIn: [carlos-garita-campos](https://www.linkedin.com/in/carlos-garita-campos-44881a111)
-- 🐙 GitHub: [cgaritac](https://github.com/cgaritac)
+- Website: [https://cgarita.web.app](https://cgarita.web.app)
+- Email: [cgaritac@gmail.com](mailto:cgaritac@gmail.com)
+- LinkedIn: [carlos-garita-campos](https://www.linkedin.com/in/carlos-garita-campos-44881a111)
+- GitHub: [cgaritac](https://github.com/cgaritac)
 
 ---
 
